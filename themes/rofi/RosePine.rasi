@@ -1,0 +1,204 @@
+
+
+* {
+  /* Default background color */
+  background-color: #26233a;
+  text-color:       #CFBC9A;
+  font: "CaskaydiaCove NF SemiLight 15";
+}
+
+
+window {
+  padding: 1em;
+  border-color: #26233a;
+  border:       5px;
+  border-radius: 10px;
+  background-color: #26233a;
+
+}
+
+mainbox {
+  spacing: 0px;
+  children: [message,inputbar,listview];
+}
+
+message {
+    enabled:                     true;
+    margin:                      0px 100px;
+    padding:                     15px;
+    border:                      0px solid;
+    border-radius:               15px;
+    border-color:                inherit;
+    background-color:            inherit;
+    text-color:                  inherit;
+    size:                        400em;
+}
+textbox {
+    background-color:            inherit;
+    text-color:                  inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.5;
+    placeholder-color:           inherit;
+    blink:                       true;
+    markup:                      true;
+    size:                        400em;
+    font: "CaskaydiaCove NF SemiBold 15";
+
+}
+error-message {
+    padding:                     12px;
+    border:                      0px solid;
+    border-radius:               0px;
+    border-color:                inherit;
+    background-color:            inherit;
+    text-color:                  inherit;
+}
+
+element {
+  background: transparent;
+  children: [ element-icon, element-text ];
+}
+element,element-text,element-icon, button {
+    cursor: pointer;
+}
+
+inputbar {
+  margin: 0px 10px;
+  spacing: 0.4em;
+  border-color: #26233a;
+  border:        5px;
+  background-color: #26233a;
+  children: [entry,overlay,case-indicator];
+}
+
+
+listview, message {
+  padding: 0.5em;
+  border-color: #26233a;
+  border:        5px;
+  border-radius: 10px;
+  background-color: #26233a;
+
+  columns: 1;
+  lines:   8;
+}
+listview {
+  border:       0px 5px 5px 5px;
+  border-radius: 10px 10px 10px 10px;
+  spacing: 10px;
+  background-color: #26233a;
+  border-color:     #26233a;
+  scrollbar:    true;
+}
+
+
+element {
+    border:  5px;
+    border-radius: 5px;
+    padding: 5px;
+    border-color: #26233a;
+}
+element-text {
+    background-color: #26233a;
+    text-color:       #FFFFFF;
+    font: "CaskaydiaCove NF SemiBold";
+}
+
+element normal.normal {
+    background-color: #26233a;
+    text-color:       #CFBC9A;
+}
+element.normal.urgent {
+    background-color: #26233a;
+    text-color:       #CFBC9A;
+}
+element.normal.active {
+    background-color: #26233a;
+    text-color:       #CFBC9A;
+}
+element.selected.normal {
+    background-color: #45475f;
+    border-color: #45475f;
+    text-color:       #CFBC9A;
+}
+element.selected.urgent {
+    background-color: #c15000;
+    border-color: #c15000;
+    text-color:       #CFBC9A;
+}
+element.selected.active {
+    background-color: #c15000;
+    border-color: #c15000;
+    text-color:       #CFBC9A;
+}
+element.alternate.normal {
+    background-color: #26233a;
+    text-color:       #CFBC9A;
+}
+element.alternate.urgent {
+    background-color: #26233a;
+    text-color:       #CFBC9A;
+}
+element.alternate.active {
+    background-color: #26233a;
+    text-color:       #CFBC9A;
+}
+
+
+element-text.selected.normal {
+    background-color: #45475f;   
+    border-color: #CFBC9A;
+    text-color:       #ffffff;
+    font: "CaskaydiaCove NF SemiBold";
+}
+element-text.selected.urgent {
+    background-color: #c15000;
+    border-color: #c15000;
+    text-color:       #26233a;
+    font: "CaskaydiaCove NF SemiBold";
+}
+element-text.selected.active {
+    background-color: #c15000;
+    border-color: #c15000;
+    text-color:       #26233a;
+    font: "CaskaydiaCove NF SemiBold";
+}
+scrollbar {
+    width:        0px ;
+    border:       0;
+    handle-color: #CFBC9A;
+    handle-width: 0px ;
+    padding:      0;
+}
+mode-switcher {
+    border:  0px;
+    spacing: 0px;
+    expand: true;
+}
+button {
+    text-color: #CFBC9A;
+    border:       0px 0px 5px ;
+    border-color: #26233a;
+    border-radius:    10px 10px 0 0;
+    background-color: #26233a;
+    horizontal-align: 0.5;
+}
+button selected.normal {
+    text-color: #CFBC9A;
+    margin: 0px;
+    padding: 0px;
+    border:     5px 5px 5px 5px ;
+    border-color: #c15000;
+    border-radius:    10px 10px 10px 10px;
+    background-color: #c15000;
+}
+
+entry {
+    placeholder: "Ride bikes!";
+    placeholder-color: #26233a;
+    text-color: #26233a;
+    background-color: #eb6f93;
+    border:        10px;
+    border-color: #eb6f93;
+    border-radius: 2px 2px 2px 2px;
+  }
