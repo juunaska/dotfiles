@@ -8,7 +8,7 @@
 #                                       \|___|/      
 
 # BEGIN_KITTY_THEME
-# Adwaita dark
+# 3024 Night
 include current-theme.conf
 # END_KITTY_THEME
 #
@@ -22,6 +22,5 @@ include current-theme.conf
 
 # plasma font size:
 font_size 12
-#font_family Overpass Nerd Font
 # background #000000
-#background_opacity 0.13
+#background_opacity 0.5
