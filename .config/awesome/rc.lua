@@ -3,6 +3,8 @@
 -- AWESOME CONFIG FOR HACKER'S KEYBOARD ON ANDROID ( Control is the modkey )
 --------------------------------------------------
 
+--table.insert(menubar.menu_gen.all_menu_dirs, "usr/share/applications/")
+
 
 pcall(require, "luarocks.loader")
 
@@ -49,7 +51,7 @@ end
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init(gears.filesystem.get_themes_dir() .. "default/theme.lua")
+beautiful.init(gears.filesystem.get_themes_dir() .. "zenburn/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
 terminal = "xfce4-terminal"
@@ -261,6 +263,15 @@ awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end
 awful.key({ modkey,    "Shift"}, "b", function () awful.spawn("chromium --no-sandbox") end,
               {description="open Chromium --no-sandbox", group="launcher"}),
 
+-- Launch Nitrogen
+awful.key({ modkey,    "Shift"}, "n", function () awful.spawn("nitrogen") end,
+              {description="open nitrogen", group="launcher"}),
+
+-- Launch Rofi
+awful.key({ modkey    }, "r", function () awful.spawn("rofi -show run") end,
+              {description="open rofi", group="launcher"}),
+
+
 
 
 
@@ -376,7 +387,7 @@ clientbuttons = gears.table.join(
         c:emit_signal("request::activate", "mouse_click", {raise = true})
         awful.mouse.client.move(c)
     end),
-    awful.button({ modkey }, 3, function (c)
+    awful.button({ modkey, "Shift" }, 1, function (c)
         c:emit_signal("request::activate", "mouse_click", {raise = true})
         awful.mouse.client.resize(c)
     end)
