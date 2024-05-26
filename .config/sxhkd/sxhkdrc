@@ -1,0 +1,254 @@
+#     Keybindings for BSPWM                                       
+# terminal 
+super + Return 
+    kitty -e fish
+
+# tilda terminal
+super + shift + Return
+    tilda
+
+
+# tilda terminal
+super + b
+    tilda
+
+
+# xkill middle button
+#button2
+#    xkill
+
+# rofi 
+super + d
+    rofi -show run -no-show-icons
+
+
+# file manager
+super + alt + p
+    pcmanfm
+
+# emacs
+super + e
+    emacs
+
+# nitrogen
+super + n
+    nitrogen
+
+# firefox 
+super + b
+   firefox 
+
+#pavucontrol
+super + shift + p
+    pavucontrol
+
+# pyradio
+super + shift + p
+    xfce4-terminal -e 'pyradio -t white_on_black'
+
+# jgmenu
+control + space
+    jgmenu_run
+# close window
+super + q
+    bspc node -c	
+
+
+# restart bspwm
+super + r
+    /home/test/.config/bspwm/bspwm-restart.sh
+
+
+# sxhkd restart 
+super + r
+    pkill -USR1 -x sxhkd
+
+
+# kill bspwm
+super + m
+    /home/test/kill-bspwm.sh
+
+
+
+# suspend
+control + shift + s
+    systemctl suspend
+
+
+
+# volume control
+XF86AudioRaiseVolume
+    pactl set-sink-volume 0 +5%
+
+XF86AudioLowerVolume
+    pactl set-sink-volume 0 -5%
+
+XF86AudioMute
+    pactl set-sink-mute 0 toggle
+
+
+# brightness control
+super + alt + Up
+    brightnessctl set 3%+
+
+super + alt + Down
+    brightnessctl set 3%-
+
+
+# Night Light red
+super + control + Down
+    redshift -O 5000 
+
+# Night Light blue
+super + control + Up
+    redshift -O 10000
+
+# Night Light reset 
+super + control + Right
+    redshift -x
+
+#screen off
+super + BackSpace
+    xset dpms force off
+
+
+# xkill
+super + alt + x
+    xkill
+
+
+# Gap selector
+super + space
+    bspc config window_gap {0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,40,50,60,70,80,90,90}
+
+
+
+#________Desktop switching_________________________________________
+
+#switch to desktop 1
+super + 1
+    bspc desktop --focus ^1
+
+
+#switch to desktop 2
+super + 2
+    bspc desktop --focus ^2
+
+#switch to desktop 3
+super + 3
+    bspc desktop --focus ^3
+
+#switch to desktop 4
+super + 4
+    bspc desktop --focus ^4
+
+
+#switch to desktop on left
+control + alt + Left
+    bspc desktop -f prev
+
+#switch to desktop on right
+control + alt + Right
+    bspc desktop -f next
+
+
+
+
+
+
+#_________Desktop sending________________________________________
+
+#send to desktop 1
+super + shift 1
+    bspc node -d ^1
+
+
+#send to desktop 2
+super + shift 2
+    bspc node -d ^2
+
+#send to desktop 3
+super + shift 3
+    bspc node -d ^3
+
+#send to desktop 4
+super + shift 4
+    bspc node -d ^4
+
+# move focused window to the next workspace and then switch to that workspace
+super + shift + {Left,Right}
+    id=$(bspc query --nodes --node); bspc node --to-desktop {prev,next}; bspc desktop --focus next; bspc node --focus ${id}
+
+
+# focus or send to the given desktop
+super + {_,shift + }{1-9,0}
+	bspc {desktop -f,node -d} '^{1-9,10}'
+
+
+
+
+
+
+#            Switch windows
+#-----------------------------------------------------           
+
+# focus the node in the given direction (h,j,k,l)
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# next desktop
+alt + Tab
+	bspc desktop -f next
+
+# focus to next node in the current desktop
+super + Tab
+	bspc node -f next.local.window
+
+
+
+
+#         float, tile, fullscreen
+#-------------------------------------------------------
+
+#toggle fullscreen
+super + t
+	bspc node -t tiled
+
+#toggle fullscreen
+super + f
+	bspc node -t {fullscreen,tiled}
+
+super + s
+	bspc node -t {floating,tiled}
+
+# move a floating window
+super + control + {h,j,k,l}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+
+
+
+
+
+#---------flip layout 90----------------------------------------
+
+super + control + f
+	bspc node @/ -R 90
+
+
+
+
+
+
+#------------make desktops ( 4 )-------------------------------- 
+
+#(terminal command --> $ bspc query --desktops)
+
+
+bspc monitor -d 1 2 3 4
+
+
+
+
+
+#### end
