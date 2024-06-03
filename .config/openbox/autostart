@@ -1,0 +1,19 @@
+#     | ##########################
+#     | #                        #
+#     | #   O  P  E  N  B  O  X  #
+#     | #    startups            #
+#     \ ##########################
+
+
+nitrogen --restore &
+tint2 &
+volumeicon &
+nm-applet &
+setxkbmap fi &
+xfce4-power-manager &
+xinput --set-prop 12 'libinput Accel Speed' 0.15 &
+
+
+
+
+
