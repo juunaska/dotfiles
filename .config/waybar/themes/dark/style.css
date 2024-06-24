@@ -67,6 +67,22 @@ window#waybar.hidden {
   margin: 0px 19px;
 }
 
+#custom-hyprland-vert{
+  border-radius: 4;
+  padding: 0px 14px;
+  padding-right: 24px;
+  font-size: 28;
+  margin: 0px 19px;
+}
+
+#custom-hyprland-hori{
+  border-radius: 4;
+  padding: 0px 14px;
+  padding-right: 24px;
+  font-size: 28;
+  margin: 0px 19px;
+}
+
 #custom-firefox {
   background-color: transparent;
   padding-left: 18px;

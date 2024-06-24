@@ -15,8 +15,10 @@
         "custom/kill",
           ],
     "modules-center": [
+     "custom/hyprland-vert",
+     "custom/hyprland-hori",
      "custom/workspaceleft",
-        "custom/workspaceright",
+     "custom/workspaceright",
 
     ],
     "modules-right": [
@@ -58,25 +60,37 @@
    "custom/kill": {
         "format": "",
 	"tooltip": false, 
-	"on-click": "~/.config/scripts/./hyprkill.sh"
+	"on-click": "~/.config/hypr/scripts/./hyprkill.sh"
     },
 
    "custom/keyboard": {
         "format": "󰌌",
 	"tooltip": false, 
-	"on-click": "~/.config/scripts/./keyboard.sh"
+	"on-click": "~/.config/hypr/scripts/./keyboard.sh"
     },
 
    "custom/workspaceleft": {
         "format": "",
 	"tooltip": false, 
-	"on-click": "~/.config/scripts/./workspaceleft.sh"
+	"on-click": "~/.config/hypr/scripts/./workspaceleft.sh"
     },
 
    "custom/workspaceright": {
         "format": "",
 	"tooltip": false, 
-	"on-click": "~/.config/scripts/workspaceright.sh"
+	"on-click": "~/.config/hypr/scripts/workspaceright.sh"
+    },
+
+   "custom/hyprland-vert": {
+        "format": "v",
+	"tooltip": false, 
+	"on-click": "~/.config/hypr/scripts/./hyprland-vert.sh"
+    },
+
+   "custom/hyprland-hori": {
+        "format": "h",
+	"tooltip": false, 
+	"on-click": "~/.config/hypr/scripts/hyprland-hori.sh"
     },
 
    "custom/firefox": {
