@@ -12,6 +12,7 @@ nm-applet &
 setxkbmap fi &
 xfce4-power-manager &
 xinput --set-prop 12 'libinput Accel Speed' 0.15 &
+xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1 &
 
 
 
