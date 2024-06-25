@@ -1,0 +1,107 @@
+{
+    "layer": "top",
+    "position": "top",
+    "spacing": 0,
+    "height": 14,
+
+    "modules-left": [
+        "custom/jgmenu",
+    ],
+    "modules-center": [
+   
+    ],
+    "modules-right": [
+	"custom/firefox",
+	"custom/kitty",
+	"network",
+	"pulseaudio",
+        "clock",
+	"memory",
+	"cpu",
+	"battery",
+    ],
+
+
+   "custom/firefox": {
+        "format": "",
+	"tooltip": false, 
+	"on-click": "firefox"
+    },
+
+   "custom/kitty": {
+        "format": "󰄛",
+	"tooltip": false, 
+	"on-click": "kitty"
+    },
+
+   "clock": {
+        "tooltip-format": "<tt>{calendar}</tt>",
+	"tooltip": false,
+        //"format-alt": "hyprland",
+        "format": "{:%a %d.%m.%y   󰥔   %H:%M}",
+	"on-click": "gnome-calendar"
+    },
+
+   "memory": {
+	"format": "󰍛  {used}G / {total}G",
+	"interval": 1,
+	
+
+},
+
+   "cpu": {
+	"format": "󰻠  {usage} %",
+	"interval": 1,
+	
+
+},
+
+
+
+   "custom/jgmenu": {
+        "format": "󰐅  m e n u",
+	"tooltip": false, 
+	"on-click": "jgmenu_run"
+    },
+
+     "network": {
+        "format-wifi" : "󰤨",
+        "format-disconnected" : "󰤭",
+	"tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+        "tooltip-format-ethernet": "󰀂  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+	"tooltip-format-disconn🔇ected": "Disconnected",
+	"on-click": "nm-connection-editor",
+	"interval": 5,
+	"nospacing": 1,
+    },
+
+    "pulseaudio": {
+        "format": "󰝚",
+        "format-muted": "󰝛",
+        "format-bluetooth": "󰂰",
+        "tooltip-format": "Volume : {volume}%",
+        "format-icons": {
+            "headphone": ""
+        },
+        "on-click": "pamixer -t && hyprctl notify -1 1200 'rgb(21D49E)' 'Audio muted/unmuted'",
+        "on-click-right": "pavucontrol",
+        "scroll-step": 1
+    },
+
+   "battery": {
+        "format":"    {capacity}% ",
+        "format-charging": "  {capacity}% ",
+        },
+        "format-full": "",
+        "interval": 5,
+        "tooltip-format": "yo",
+        "tooltip": true,
+	"on-click": "brightnessctl set 3%+",
+	"on-click-right": "brightnessctl set 3%-"
+    },
+
+}
+
+
+
+//
