@@ -1,0 +1,194 @@
+#waybar {
+  margin: 8px 8px 8px 8px;
+  background-color: #14161b;
+  border: none;
+  border-radius: 0;
+  min-height: 0;
+  font-family: JetBrainsMono Nerd Font;
+  font-size: 16;
+  color: #dcdcdc;
+  opacity: 0.8;
+}
+
+#custom-jgmenu {
+  color: #dcdcdc;
+  background-color: transparent;
+  border-radius: 9;
+  padding: 0px 14px;
+  font-size: 28;
+  margin: 0px 4px;
+}
+
+#custom-kill {
+  border-radius: 9;
+  padding: 0px 14px;
+  padding-right: 24px;
+  font-size: 28;
+  color: #14161b;
+  background-color: #dcdcdc;
+  margin: 3px 6px;
+}
+
+#custom-keyboard {
+  border-radius: 9;
+  padding: 0px 14px;
+  padding-right: 21px;
+  font-size: 36;
+  color: #14161b;
+  background-color: #dcdcdc;
+  margin: 3px 6px;
+}
+
+#custom-workspaceleft {
+  border-radius: 9;
+  padding: 0px 14px;
+  padding-right: 24px;
+  font-size: 28;
+  margin: 0px 19px;
+}
+
+#custom-workspaceright {
+  border-radius: 9;
+  padding: 0px 14px;
+  padding-right: 24px;
+  font-size: 28;
+  margin: 0px 19px;
+}
+
+#custom-hyprland-vert{
+  border-radius: 9;
+  padding: 0px 14px;
+  padding-right: 24px;
+  font-size: 28;
+  margin: 0px 0px;
+}
+
+#custom-hyprland-hori{
+  border-radius: 9;
+  padding: 0px 14px;
+  padding-right: 24px;
+  font-size: 28;
+  margin: 0px 0px;
+}
+
+#custom-firefox {
+  background-color: transparent;
+  padding-left: 18px;
+  padding-right: 25px;
+  border-radius: 9px;
+  font-size: 19;
+  margin: 0px 4px;
+}
+
+#custom-kitty {
+  background-color: transparent;
+  padding-left: 18px;
+  padding-right: 25px;
+  border-radius: 9px;
+  font-size: 21;
+  margin: 0px 4px;
+}
+
+#custom-wallpaper {
+  background-color: transparent;
+  padding-left: 18px;
+  padding-right: 25px;
+  border-radius: 9px;
+  font-size: 21;
+  margin: 0px 4px;
+}
+
+#custom-brightness {
+  background-color: transparent;
+  padding-left: 18px;
+  padding-right: 25px;
+  border-radius: 9px;
+  font-size: 19;
+  margin: 0px 4px;
+}
+
+#network {
+  background-color: transparent;
+  padding-left: 18px;
+  padding-right: 25px;
+  border-radius: 9px;
+  font-size: 19;
+  margin: 0px 4px;
+}
+
+#pulseaudio {
+
+  background-color: transparent;
+  padding-right: 15;
+  border-radius: 9px;
+  font-size: 19;
+  margin: 0px 4px;
+  padding: 0px 24px;
+}
+
+#clock {
+  background-color: transparent;
+  border-radius: 9;
+  padding: 0px 14px;
+  font-size: 19;
+  margin: 0px 4px;
+}
+
+#memory {
+  background-color: transparent;
+  border-radius: 9;
+  padding: 0px 14px;
+  font-size: 19;
+  margin: 0px 4px;
+}
+
+#cpu {
+  background-color: transparent;
+  border-radius: 9;
+  padding: 0px 14px;
+  font-size: 19;
+  margin: 0px 4px;
+}
+
+#battery {
+  color: #1f1f1f;
+  font-size: 19;
+  background-color: #dcdcdc;
+  border-radius: 9px; 
+  opacity: 1;
+  margin: 3px 4px;
+	}
+	@keyframes blink {
+	  to {
+	    color: #181825;
+	    background-color: #f38ba8;
+	  }
+	}
+	#battery.warning,
+	#battery.critical,
+	#battery.urgent {
+	  color: #181825;
+	  background-color: #ff0048;
+	  animation-name: blink;
+	  animation-duration: 0.5s;
+	  animation-timing-function: linear;
+	  animation-iteration-count: infinite;
+	  animation-direction: alternate;
+	}
+	#battery.charging {
+	  color: #1f1f1f;
+	  background-color: #75a865;
+	}
+
+tooltip {
+border-radius: 9px;
+padding: 1px;
+background-color: #222222;
+}
+
+tooltip label {
+padding: 49px;
+background-color: #222222;
+font-family: JetBrainsMono Nerd Font;
+font-size: 16;
+}
