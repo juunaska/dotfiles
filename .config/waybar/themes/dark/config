@@ -15,11 +15,11 @@
         "custom/kill",
           ],
     "modules-center": [
-     "custom/hyprland-vert",
-     "custom/hyprland-hori",
-     "custom/workspaceleft",
-     "custom/workspaceright",
-
+     //"custom/hyprland-vert",
+     //"custom/hyprland-hori",
+     //"custom/workspaceleft",
+     //"custom/workspaceright",
+	"",
     ],
     "modules-right": [
 	"battery",
@@ -31,7 +31,7 @@
         "tooltip-format": "<tt>{calendar}</tt>",
 	"tooltip": false,
         //"format-alt": "hyprland",
-        "format": "{:%a %d.%m.%y   󰥔   %H:%M}",
+        "format": "{:%a %d.%m.%y  󰃭  %H:%M}",
 	"on-click": "gnome-calendar"
     },
 
