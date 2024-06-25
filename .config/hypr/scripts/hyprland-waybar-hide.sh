@@ -4,5 +4,5 @@ if pgrep -x "waybar" > /dev/null
 then
     killall waybar
 else
-    waybar -c ~/.config/waybar/themes/dark/config -s ~/.config/waybar/themes/dark/style.css &
+    waybar -c ~/.config/waybar/themes/dark2/config -s ~/.config/waybar/themes/dark2/style.css &
 fi

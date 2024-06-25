@@ -7,7 +7,7 @@
   font-family: JetBrainsMono Nerd Font;
   font-size: 16;
   color: #dcdcdc;
-  opacity: 0.8;
+  opacity: 1.0;
 }
 
 #custom-jgmenu {
@@ -182,13 +182,14 @@
 
 tooltip {
 border-radius: 9px;
+border-color: #000000;
 padding: 1px;
-background-color: #222222;
+background-color: #14161b;
 }
 
 tooltip label {
 padding: 49px;
-background-color: #222222;
+background-color: #14161b;
 font-family: JetBrainsMono Nerd Font;
 font-size: 16;
 }

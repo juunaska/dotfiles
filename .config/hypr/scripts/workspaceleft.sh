@@ -1,1 +1,1 @@
-hyprctl dispatch workspace 1 &
+hyprctl dispatch workspace e-1 &
