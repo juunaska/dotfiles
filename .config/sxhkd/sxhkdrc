@@ -26,21 +26,21 @@ super + d
 super + alt + p
     pcmanfm
 
-# emacs
-super + e
-    emacs
-
 # nitrogen
 super + n
     nitrogen
 
 # firefox 
-super + b
+super + alt + b
    firefox 
 
 #pavucontrol
 super + shift + p
     pavucontrol
+
+# simplenote
+super + alt + s
+    com.simplenote.Simplenote
 
 # pyradio
 super + shift + p
