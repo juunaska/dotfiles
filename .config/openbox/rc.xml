@@ -46,7 +46,7 @@
                     'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Box</name>
+    <name>Box-Pink</name>
     <titleLayout>C</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -164,9 +164,9 @@
        cases. -->
   <margins>
     <top>0</top>
-    <bottom>0</bottom>
-    <left>0</left>
-    <right>0</right>
+    <bottom>3</bottom>
+    <left>3</left>
+    <right>3</right>
   </margins>
   <dock>
     <position>Floating</position>
@@ -412,7 +412,7 @@
     </keybind>
     <keybind key="W-Return">
       <action name="Execute">
-        <command>kitty</command>
+        <command>lxterminal</command>
       </action>
     </keybind>
     <keybind key="W-A-p">
@@ -466,14 +466,14 @@
         <command>redshift -O 5000</command>
       </action>
     </keybind>
-    <keybind key="W-A-Up">
+    <keybind key="XF86MonBrightnessUp">
       <action name="Execute">
-        <command>brightnessctl set 3%+</command>
+        <command>brightnessctl set 6%+</command>
       </action>
     </keybind>
-    <keybind key="W-A-Down">
+    <keybind key="XF86MonBrightnessDown">
       <action name="Execute">
-        <command>brightnessctl set 3%-</command>
+        <command>brightnessctl set 6%-</command>
       </action>
     </keybind>
     <keybind key="W-m">

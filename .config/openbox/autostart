@@ -6,7 +6,7 @@
 
 
 nitrogen --restore &
-tint2 &
+polybar &
 volumeicon &
 nm-applet &
 setxkbmap fi &
