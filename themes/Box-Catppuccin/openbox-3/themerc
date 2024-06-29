@@ -1,16 +1,16 @@
-!! BOX BY TEST PROPS TO ------>
+
 
 !! Global Width
 window.handle.width: 2
 
 window.client.padding.width: 0
 window.client.padding.height: 0
-border.Width: 3
+border.Width: 2
 padding.width: 2
 
-window.active.border.color: #c15000
-window.inactive.border.color: #000000
-menu.border.color: #000000
+window.active.border.color: #ddb6f2
+window.inactive.border.color: #222222
+menu.border.color: #222222
 menu.overlap: 0
 window.frameColor: #eeeeee
 window.*.client.color: #eeeeee
@@ -18,25 +18,26 @@ window.*.client.color: #eeeeee
 
 !! Menu
 menu.title.bg: flat gradient split
-menu.title.bg.color: #000000
+menu.title.bg.color: #222222
 menu.title.bg.colorTo: #51443e
 menu.title.text.color: #ffffff
 
-menu.items.bg: flat solid
-menu.items.bg.color: #f9f2ee
+menu.items.bg: gradient solid
+menu.items.bg.color: #f8bd96
+menu.items.bg.colorTo: #abe9b3
 
-menu.items.text.color: #000000
+menu.items.text.color: #222222
 menu.items.disabled.text.color: #737573
 
-menu.items.active.bg: flat gradient split
-menu.items.active.bg.color:  #000000
-menu.items.active.bg.colorTo:#51443e
+menu.items.active.bg: flat
+menu.items.active.bg.color:  #222222
+menu.items.active.bg.colorTo:#ddb6f2
 menu.items.active.text.color: #f9f2ee
 
 !! Active Windows
-window.active.title.bg: flat
-window.active.title.bg.color: #000000
-window.active.title.bg.colorTo: #51443e
+window.active.title.bg: split gradient
+window.active.title.bg.color: #ddb6f2
+window.active.title.bg.colorTo: #f28fad
 window.active.*.bg.border.color: #c15000
 
 window.active.label.bg: parentrelative
@@ -49,7 +50,7 @@ window.active.button.*.bg.border.color: #4e5860
 window.active.button.hover.bg.color: #576773
 window.active.button.hover.bg.border.color: #9aabb9
 window.active.button.pressed.bg.color: #343b40
-window.active.button.pressed.bg.colorTo: #000000
+window.active.button.pressed.bg.colorTo: #222222
 window.active.button.pressed.image.color: #b6b6b6
 window.active.button.pressed.bg.border.color: #b1a19e
 
@@ -62,13 +63,13 @@ window.active.handle.bg.color:#51443e
 window.*.grip.bg:  flat solid 
 window.*.grip.bg.color: #51443e
 
-window.handle.width: 2
+window.handle.width: 0
 
 !! Inactive Windows
 window.inactive.title.bg: flat
-window.inactive.title.bg.color: #000000
+window.inactive.title.bg.color: #222222
 window.inactive.title.bg.colorTo: #f8f7f2
-window.inactive.*.border.color: #000000
+window.inactive.*.border.color: #222222
 
 window.inactive.label.bg: parentrelative
 window.inactive.label.text.color: #919191
