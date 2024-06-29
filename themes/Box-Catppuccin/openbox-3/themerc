@@ -6,11 +6,11 @@ window.handle.width: 2
 window.client.padding.width: 0
 window.client.padding.height: 0
 border.Width: 2
-padding.width: 2
+padding.width: 222
 
-window.active.border.color: #ddb6f2
-window.inactive.border.color: #222222
-menu.border.color: #222222
+window.active.border.color: #1b1b2b
+window.inactive.border.color: #1b1b2b
+menu.border.color: #2222222
 menu.overlap: 0
 window.frameColor: #eeeeee
 window.*.client.color: #eeeeee
@@ -35,10 +35,9 @@ menu.items.active.bg.colorTo:#ddb6f2
 menu.items.active.text.color: #f9f2ee
 
 !! Active Windows
-window.active.title.bg: split gradient
-window.active.title.bg.color: #ddb6f2
-window.active.title.bg.colorTo: #f28fad
-window.active.*.bg.border.color: #c15000
+window.active.title.bg: gradient
+window.active.title.bg.color: #f8bd96
+window.active.title.bg.colorTo: #abe9b3
 
 window.active.label.bg: parentrelative
 window.active.label.text.color: #f9f2ee
@@ -67,7 +66,7 @@ window.handle.width: 0
 
 !! Inactive Windows
 window.inactive.title.bg: flat
-window.inactive.title.bg.color: #222222
+window.inactive.title.bg.color: #1b1b2b
 window.inactive.title.bg.colorTo: #f8f7f2
 window.inactive.*.border.color: #222222
 
