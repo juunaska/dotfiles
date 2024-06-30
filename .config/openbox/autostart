@@ -5,6 +5,7 @@
 #     \ ##########################
 
 
+# xrandr -o right &
 nitrogen --restore &
 polybar &
 volumeicon &

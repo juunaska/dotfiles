@@ -4,7 +4,8 @@
 #    bspwm config 
 # >----------------->
 
-#			    autostart
+
+# xrandr -o right &			    autostart
 killall volumeicon &
 sxhkd &
 polybar -r &
