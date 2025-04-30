@@ -1,0 +1,18 @@
+Lenovo tablet x86 settings
+
+GRUB:
+quiet i915.modeset=1 intel_pstate=disable intel_idle.max_cstate=1 clocksource=tsc
+
+
+Hyprland
+monitor=DSI-1,preferred,auto,1,transform,3,
+
+
+Xrandr
+xrandr -o right
+
+
+
+cpupowergui
+all settings to max with a script
+
