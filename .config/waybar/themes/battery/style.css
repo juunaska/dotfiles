@@ -1,0 +1,52 @@
+#waybar {
+
+/* Border */
+
+  border-style: solid;
+  border-color: #ffffff;
+
+/* Waybar background color */
+  background-color: #21222c; 
+
+/* Icon / Text color */
+  color: #89b4fa;
+/*  text-shadow: 0px 2px 4px rgba(0,0,0,1.0); */
+  font-family: JetBrainsMono Nerd Font;
+
+/* Opacity of everything */
+  opacity: 1.0;
+
+  border-radius: 0 0 0 0;
+  min-height: 0;
+  font-size: 16;
+}
+
+#clock {
+  color: #bd93f9;
+  border-radius: 3 3 3 3; 
+  opacity: 1;
+}
+
+#battery {
+  color: #bd93f9;
+  text-shadow: 0px 0px 0px rgba(0,0,0,0.0);
+  border-radius: 3 3 3 3; 
+  opacity: 1;
+	}
+
+    #battery.charging {
+	  color: #abe9b3;
+	}
+
+tooltip {
+border-radius: 6px;
+padding: 1px;
+background-color: #f5aee8;
+}
+
+tooltip label {
+color: #000000;
+padding: 0px;
+font-size: 18;
+font-family: CaskaydiaCove Nerd Font;
+}

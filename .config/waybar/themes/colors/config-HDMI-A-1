@@ -1,0 +1,196 @@
+{
+    "layer": "top",
+    "position": "top",
+    "output": "HDMI-A-1",
+    "spacing": 0,
+   /* "margin": "0 140 0 140",*/
+    "height": 14,
+
+    "modules-center": [
+       "custom/minimize",
+       "custom/jgmenu",
+ 	"custom/firefox",
+ 	"custom/pcmanfm",
+	"custom/kitty",
+	"custom/wallpaper",
+	"custom/simplenote",
+        "custom/transistor",
+          ],
+    "modules-left": [
+        "clock",
+    ],
+    "modules-right": [
+        "custom/pin",
+	"pulseaudio",
+    ],
+
+
+   "clock": {
+        "tooltip-format": "<tt>{calendar}</tt>",
+	"tooltip": false,
+        //"format-alt": "hyprland",
+        "format": "{:%a %d.%m.%y   %H:%M}",
+	"on-click": "~/.config/hypr/scripts/./calendar-hide.sh"
+    },
+
+   "memory": {
+	"format": "󰍛  {used}G / {total}G",
+	"interval": 1,
+	
+
+},
+
+   "cpu": {
+	"format": "󰻠  {usage} %",
+	"interval": 1,
+	
+
+},
+
+
+
+   "custom/jgmenu": {
+        "format": "  ",
+	"tooltip": false, 
+	"on-click": "~/.config/waybar/scripts/./jgmenu.sh"
+    },
+
+   "custom/minimize": {
+        "format": "  ",
+	"tooltip": false, 
+	"on-click": "~/.config/hypr/scripts/minimize.sh"
+    },
+
+
+
+   "custom/kill": {
+        "format":"",
+	"tooltip": false, 
+	"on-click": "~/.config/hypr/scripts/./hyprkill.sh"
+    },
+
+   "custom/transistor": {
+        "format": "󰐹",
+	"tooltip": true, 
+	"tooltip-format": "Transistor", 
+	"on-click": "waydroid app launch org.y20k.transistor"
+    },
+
+   "custom/keyboard": {
+        "format": "󰌌",
+	"tooltip": true, 
+	"tooltip-format": "Virtual keyboard", 
+	"on-click": "~/.config/hypr/scripts/./keyboard.sh"
+    },
+
+   "custom/workspaceleft": {
+        "format": "",
+	"tooltip": false, 
+	"on-click": "~/.config/hypr/scripts/./workspaceleft.sh"
+    },
+
+   "custom/workspaceright": {
+        "format": "",
+	"tooltip": false, 
+	"on-click": "~/.config/hypr/scripts/workspaceright.sh"
+    },
+
+   "custom/hyprland-vert": {
+        "format": "󰑨",
+	"tooltip": true, 
+	"tooltip-format": "flip to vertical", 
+	"on-click": "~/.config/hypr/scripts/./hyprland-vert.sh"
+    },
+
+  "custom/hyprland-hori": {
+        "format": "󰑦",
+	"tooltip": true, 
+	"tooltip-format": "flip to horizontal", 
+	"on-click": "~/.config/hypr/scripts/hyprland-hori.sh"
+    },
+
+   "custom/firefox": {
+        "format": "",
+	"tooltip": false, 
+	"on-click": "firefox"
+    },
+
+   "custom/pcmanfm": {
+        "format": "",
+	"tooltip": false, 
+	"on-click": "pcmanfm"
+    },
+
+   "custom/kitty": {
+        "format": "󰄛",
+	"tooltip": false, 
+	"on-click": "kitty"
+    },
+
+   "custom/wallpaper": {
+        "format": "",
+	"tooltip": false, 
+	"on-click": "waypaper"
+    },
+
+   "custom/simplenote": {
+        "format": "",
+	"tooltip": false, 
+	"on-click": "com.simplenote.Simplenote"
+    },
+
+   "custom/pin": {
+        "format":"",
+	"tooltip": true, 
+	"tooltip-format": "pin window", 
+	"on-click": "hyprctl dispatch pin"
+    },
+
+   "custom/brightness": {
+        "format": "󰃟",
+	"tooltip": true, 
+	"tooltip-format": "brightnessctl i", 
+	"on-scroll-up": "brightnessctl s 3%+",
+	"on-scroll-down": "brightnessctl s 3%-"
+    },
+
+     "network": {
+        "format-wifi" : "󰤨",
+        "format-disconnected" : "󰤭",
+	"tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+        "tooltip-format-ethernet": "󰀂  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+	"tooltip-format-disconn🔇ected": "Disconnected",
+	"on-click": "nm-connection-editor",
+	"interval": 5,
+	"nospacing": 1,
+    },
+
+    "pulseaudio": {
+        "format": "󰝚",
+        "format-muted": "󰝛",
+        "format-bluetooth": "󰂰",
+        "tooltip-format": "Volume : {volume}%",
+        "format-icons": {
+            "headphone": ""
+        },
+        "on-click-right": "pamixer -t",
+        "on-click": "~/.config/hypr/scripts/pavucontrol-hide.sh",
+        "scroll-step": 1
+    },
+
+   "battery": {
+        "format":"    {capacity}% ",
+        "format-charging": "  {capacity}% ",
+
+        },
+        "format-full": "",
+        "interval": 5,
+        "tooltip-format": "yo",
+        "tooltip": true,
+    },
+
+}
+
+
+
+//

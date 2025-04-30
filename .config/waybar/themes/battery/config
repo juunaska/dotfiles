@@ -1,0 +1,36 @@
+{
+    "layer": "top",
+    "position": "bottom",
+    "output": "eDP-1",
+    "spacing": 9,
+   /* "margin": "0 140 0 140",*/
+    "height": 14,
+
+   "modules-left": [
+    ],
+     "modules-center": [
+          ],
+    "modules-right": [
+	"clock",
+	"battery",
+    ],
+
+
+   "clock": {
+        "format": "{:%H:%M}",
+        "tooltip-format": "{:%A, %d.%m.%Y}",
+        "tooltip": true
+    },
+
+   "battery": {
+        "format":"{capacity}",
+        "format-charging": "{capacity}",
+
+        },
+        "format-full": "",
+        "interval": 5,
+        "tooltip-format": "yo",
+        "tooltip": true,
+    },
+
+}

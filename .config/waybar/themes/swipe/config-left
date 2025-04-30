@@ -1,0 +1,28 @@
+{
+    "layer": "top",
+    "position": "left",
+    "output": "eDP-1",
+    "spacing": 0,
+    "height": 0,
+
+    "modules-center": [
+          ],
+    "modules-left": [
+       "custom/swipe2",
+    ],
+    "modules-right": [
+       "custom/swipe",
+    ],
+   "custom/swipe2": {
+        "format": "JOÖU",
+	"tooltip": false, 
+	"on-click": "hyprctl dispatch workspace +1"
+    },
+
+   "custom/swipe": {
+        "format": "SWIPE",
+	"tooltip": false, 
+	"on-click": "hyprctl dispatch workspace -1"
+    },
+}
+

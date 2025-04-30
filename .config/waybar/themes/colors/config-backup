@@ -1,0 +1,205 @@
+{
+
+	"layer":	"top",
+	"position":	"top",
+	"output":	"eDP-1",
+	"spacing":	0,
+	"height":	14,
+	/* "margin":	"0 140 0 140",*/
+
+"modules-left": [
+ 	"custom/menu",
+        "clock",
+ 	"custom/firefox",
+ 	"custom/pcmanfm",
+	"custom/kitty",
+	"custom/wallpaper",
+	"custom/simplenote",
+        "custom/shortwave",
+],
+
+"modules-center": [
+],
+
+"modules-right": [
+	"pulseaudio/slider",
+	"custom/border-0",
+	"custom/border-1",
+	"custom/pin",
+        "custom/kill",
+	"custom/brightness",
+	"network",
+	"pulseaudio",
+	"battery",
+	"custom/powermenu",
+],
+
+   "custom/menu": {
+	"format": "", 
+	"tooltip": false, 
+	"on-click": "nwg-menu", 
+	"on-scroll-up": "hyprctl dispatch workspace -1",
+	"on-scroll-down": "hyprctl dispatch workspace +1",
+},
+
+   "custom/firefox": {
+        "format": "󰖟",
+	"tooltip": true, 
+	"tooltip-format": "Firefox", 
+	"on-click": "firefox",
+	"on-click-right": "hyprctl dispatch workspace 1",
+	"on-scroll-up": "hyprctl dispatch workspace -1",
+	"on-scroll-down": "hyprctl dispatch workspace +1",
+},
+
+   "custom/pcmanfm": {
+        "format": "",
+	"tooltip": true, 
+	"tooltip-format": "File manager", 
+	"on-click": "nautilus",
+	"on-scroll-up": "hyprctl dispatch workspace -1",
+	"on-scroll-down": "hyprctl dispatch workspace +1",
+},
+
+   "custom/kitty": {
+        "format": "",
+	"tooltip": true, 
+	"tooltip-format": "Terminal", 
+	"on-click": "kitty",
+	"on-click-right": "hyprctl dispatch workspace 2",
+	"on-scroll-up": "hyprctl dispatch workspace -1",
+	"on-scroll-down": "hyprctl dispatch workspace +1",
+},
+
+   "custom/wallpaper": {
+        "format": "",
+	"tooltip": true, 
+	"tooltip-format":"Change wallpaper",
+	"on-click": "waypaper",
+	"on-scroll-up": "hyprctl dispatch workspace -1",
+	"on-scroll-down": "hyprctl dispatch workspace +1",
+},
+
+   "custom/simplenote": {
+        "format": "",
+	"tooltip": true, 
+	"tooltip-format": "Simplenote", 
+	"on-click": "flatpak run com.simplenote.Simplenote",
+	"on-click-right": "hyprctl dispatch workspace 3",
+	"on-scroll-up": "hyprctl dispatch workspace -1",
+	"on-scroll-down": "hyprctl dispatch workspace +1",
+},
+
+   "custom/shortwave": {
+        "format": "󰐹",
+	"tooltip": true, 
+	"tooltip-format": "Radio", 
+	"on-click": "shortwave",
+	"on-click-right": "hyprctl dispatch workspace 3",
+	"on-scroll-up": "hyprctl dispatch workspace -1",
+	"on-scroll-down": "hyprctl dispatch workspace +1",
+},
+
+   "clock": {
+        "format":"{:%a %d.%m. %H:%M}",
+     //   "format-alt":" ",
+     // "format-alt":"{:%H:%M}",
+      "on-click": "~/.config/scripts/waybar-hide-dark.sh && ~/.config/scripts/waybar-hide-dark.sh",
+      "on-click-right": "~/.config/scripts/waybar-hide-light.sh && ~/.config/scripts/waybar-hide-light.sh",
+	"tooltip": false,
+        "tooltip-format": "<tt>{calendar}</tt>"
+},
+
+   "pulseaudio/slider": {
+	"min": 0,
+	"max": 150,
+	"orientation": "horizontal",
+},
+
+   "custom/border-1": {
+	"format": " + ", 
+	"tooltip": false, 
+	"on-click": "hyprctl keyword general:border_size 3", 
+},
+
+   "custom/border-0": {
+	"format": " - ", 
+	"tooltip": false, 
+	"on-click": "hyprctl keyword general:border_size 0", 
+},
+
+   "memory": {
+	"format": "󰍛  {used}G / {total}G",
+	"interval": 1,
+},
+
+   "cpu": {
+	"format": "󰻠  {usage} %",
+	"interval": 1,
+},
+
+   "custom/pin": {
+        "format":"",
+	"tooltip": true, 
+	"tooltip-format": "pin window", 
+	"on-click": "hyprctl dispatch pin"
+},
+
+   "custom/kill": {
+        "format":"",
+	"tooltip": false, 
+	"on-click": "~/.config/hypr/scripts/./hyprkill.sh"
+},
+
+   "custom/brightness": {
+        "format": "󰃟",
+	"tooltip": true, 
+	"tooltip-format": "brightnessctl i", 
+	"on-scroll-up": "brightnessctl s 3%+",
+	"on-scroll-down": "brightnessctl s 3%-"
+},
+
+     "network": {
+        "format-wifi" : "󰤨",
+        "format-disconnected" : "󰤭",
+	"tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+        "tooltip-format-ethernet": "󰀂  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+	"tooltip-format-disconnected": "Disconnected",
+	"on-click": "nm-connection-editor",
+	"on-click-right": "kitty -e systemctl restart NetworkManager",
+	"interval": 5,
+	"nospacing": 1,
+},
+
+    "pulseaudio": {
+        "format": "󰝚",
+        "format-muted": "󰝛",
+        "format-bluetooth": "󰂰",
+        "tooltip-format": "Volume : {volume}%",
+        "format-icons": {
+            "headphone": ""
+        },
+        "on-click": "pamixer -t",
+        "on-click-right": "~/.config/hypr/scripts/pavucontrol-hide.sh",
+        "scroll-step": 10,
+},
+
+   "custom/powermenu": {
+        "format": "",
+	"tooltip": false, 
+	"on-click": "nwg-bar",
+	"on-scroll-up": "hyprctl dispatch workspace -1",
+	"on-scroll-down": "hyprctl dispatch workspace +1",
+},
+
+   "battery": {
+        "format":"{capacity}%",
+        "format-charging": "{capacity}% "},
+        "format-full": "",
+        "interval": 5,
+        "tooltip-format": "yo",
+        "tooltip": true,
+},
+
+}
+

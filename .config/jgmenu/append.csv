@@ -1,0 +1,5 @@
+^sep()
+Border = True,	hyprctl keyword general:border_size 1
+Border = False,	hyprctl keyword general:border_size 0
+^sep()
+     Close menu   ,	killall jgmenu

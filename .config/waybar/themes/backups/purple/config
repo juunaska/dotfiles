@@ -1,0 +1,222 @@
+{
+
+	"layer":	"top",
+	"position":	"top",
+	"output":	"eDP-1",
+	"spacing":	0,
+	"height":	14,
+	/* "margin":	"0 140 0 140",*/
+
+"modules-left": [
+ 	"custom/menu",
+        "clock",
+	"custom/border-1",
+	"custom/border-0",
+],
+"modules-center": [
+       "custom/minimize",
+ 	"custom/firefox",
+ 	"custom/pcmanfm",
+	"custom/kitty",
+	"custom/wallpaper",
+	"custom/simplenote",
+        "custom/shortwave",
+        "custom/keyboard",
+        "custom/kill",
+],
+"modules-right": [
+	"pulseaudio/slider",
+	"custom/workspaceleft",
+	"custom/workspaceright",
+	"custom/pin",
+	"custom/brightness",
+	"network",
+	"pulseaudio",
+	"battery",
+],
+
+"custom/menu": {
+	"format": " ", 
+	"tooltip": false, 
+	"on-click": "~/.config/scripts/./jgmenu.sh", 
+},
+
+"pulseaudio/slider": {
+	"min": 0,
+	"max": 100,
+	"orientation": "horizontal"
+},
+
+   "clock": {
+        "tooltip-format": "<tt>{calendar}</tt>",
+	"tooltip": false,
+        //"format-alt": "hyprland",
+        "format": "{:%a %d.%m. 󰧟 %H:%M}",
+	"on-click": "~/.config/hypr/scripts/./calendar-hide.sh"
+},
+
+"custom/border-1": {
+	"format": " + ", 
+	"tooltip": false, 
+	"on-click": "hyprctl keyword general:border_size 1", 
+},
+
+"custom/border-0": {
+	"format": " - ", 
+	"tooltip": false, 
+	"on-click": "hyprctl keyword general:border_size 0", 
+},
+
+   "memory": {
+	"format": "󰍛  {used}G / {total}G",
+	"interval": 1,
+},
+
+"cpu": {
+	"format": "󰻠  {usage} %",
+	"interval": 1,
+},
+
+   "custom/jgmenu": {
+        "format": " menu ",
+	"tooltip": false, 
+	"on-click": "~/.config/waybar/scripts/./jgmenu.sh"
+},
+
+   "custom/minimize": {
+        "format": "  ",
+	"tooltip": false, 
+	"on-click": "~/.config/hypr/scripts/minimize.sh"
+},
+
+
+
+   "custom/kill": {
+        "format":"",
+	"tooltip": false, 
+	"on-click": "~/.config/hypr/scripts/./hyprkill.sh"
+},
+
+   "custom/shortwave": {
+        "format": "󰐹",
+	"tooltip": true, 
+	"tooltip-format": "Shortwave radio", 
+	"on-click": "shortwave"
+},
+
+   "custom/keyboard": {
+        "format": "󰌌",
+	"tooltip": true, 
+	"tooltip-format": "Virtual keyboard", 
+	"on-click": "~/.config/scripts/./keyboard.sh"
+},
+
+   "custom/workspaceleft": {
+        "format": "",
+	"tooltip": false, 
+	"on-click": "~/.config/hypr/scripts/./workspaceleft.sh"
+},
+
+   "custom/workspaceright": {
+        "format": "",
+	"tooltip": false, 
+	"on-click": "~/.config/hypr/scripts/workspaceright.sh"
+},
+
+   "custom/hyprland-vert": {
+        "format": "󰑨",
+	"tooltip": true, 
+	"tooltip-format": "flip to vertical", 
+	"on-click": "~/.config/hypr/scripts/./hyprland-vert.sh"
+},
+
+  "custom/hyprland-hori": {
+        "format": "󰑦",
+	"tooltip": true, 
+	"tooltip-format": "flip to horizontal", 
+	"on-click": "~/.config/hypr/scripts/hyprland-hori.sh"
+},
+
+   "custom/firefox": {
+        "format": "",
+	"tooltip": false, 
+	"on-click": "firefox"
+},
+
+   "custom/pcmanfm": {
+        "format": "",
+	"tooltip": false, 
+	"on-click": "pcmanfm"
+},
+
+   "custom/kitty": {
+        "format": "󰄛",
+	"tooltip": false, 
+	"on-click": "kitty"
+},
+
+   "custom/wallpaper": {
+        "format": "",
+	"tooltip": false, 
+	"on-click": "waypaper"
+},
+
+   "custom/simplenote": {
+        "format": "",
+	"tooltip": false, 
+	"on-click": "flatpak run com.simplenote.Simplenote"
+},
+
+   "custom/pin": {
+        "format":"",
+	"tooltip": true, 
+	"tooltip-format": "pin window", 
+	"on-click": "hyprctl dispatch pin"
+},
+
+   "custom/brightness": {
+        "format": "󰃟",
+	"tooltip": true, 
+	"tooltip-format": "brightnessctl i", 
+	"on-scroll-up": "brightnessctl s 3%+",
+	"on-scroll-down": "brightnessctl s 3%-"
+},
+
+     "network": {
+        "format-wifi" : "󰤨",
+        "format-disconnected" : "󰤭",
+	"tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+        "tooltip-format-ethernet": "󰀂  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+	"tooltip-format-disconn🔇ected": "Disconnected",
+	"on-click": "nm-connection-editor",
+	"interval": 5,
+	"nospacing": 1,
+},
+
+    "pulseaudio": {
+        "format": "󰝚",
+        "format-muted": "󰝛",
+        "format-bluetooth": "󰂰",
+        "tooltip-format": "Volume : {volume}%",
+        "format-icons": {
+            "headphone": ""
+        },
+        "on-click-right": "pamixer -t",
+        "on-click": "~/.config/hypr/scripts/pavucontrol-hide.sh",
+        "scroll-step": 1
+},
+
+   "battery": {
+        "format":" {capacity}% ",
+        "format-charging": "  {capacity}% "},
+        "format-full": "",
+        "interval": 5,
+        "tooltip-format": "yo",
+        "tooltip": true,
+},
+
+}
+
+
+
+//

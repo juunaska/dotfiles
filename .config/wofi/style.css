@@ -1,0 +1,50 @@
+#window {
+  border: 1px;
+  border-style: solid;
+  border-color: #c4b7ff;
+  border-radius: 14px;
+  background-color: #1b1b1f
+  font-size: 26px;
+  font-family: CaskaydiaCove Nerd Font;
+}
+
+#input {
+  border: 1px;
+  border-style: solid;
+  border-color: #c4b7ff;
+  padding: 4px;
+  border-radius: 14px 14px 0 0;
+  font-size: 26px;
+  font-family: CaskaydiaCove Nerd Font;
+  background-color: #1b1b1f;
+}
+
+#input:focus {
+ 
+  box-shadow: none;
+}
+
+#scroll {
+  border-radius: 14px;
+  background-color: #1b1b1f
+  margin: 0 12px 12px;
+}
+
+#inner-box {
+  border-radius: 14px;
+  padding: 12px;
+}
+
+#entry {
+  padding: 8px;
+}
+
+#entry:selected {
+  border-radius: 7px;
+  border-color: #c4b7ff;
+  background-color: #1b1b1f
+}
+
+#entry image {
+  margin-right: 8px;
+}

@@ -1,0 +1,225 @@
+{
+
+	"layer":	"top",
+	"position":	"top",
+	"output":	"eDP-1",
+	"spacing":	0,
+	"height":	14,
+	/* "margin":	"0 140 0 140",*/
+
+"modules-left": [
+ 	"custom/menu",
+ 	"custom/web",
+	"custom/terminal",
+	"custom/apps",
+ 	"custom/files",
+ 	"custom/graph",
+ 	"custom/vnc",
+        "clock",
+],
+
+"modules-center": [
+
+],
+
+"modules-right": [
+	"custom/border-0",
+	"custom/border-1",
+	"custom/pin",
+        "custom/kill",
+	"pulseaudio/slider",
+	"custom/brightness",
+	"network",
+	"pulseaudio",
+	"battery",
+	"custom/powermenu",
+],
+
+   "custom/menu": {
+	"format": "󰣇", 
+	"tooltip": false, 
+	"on-click": "nwg-menu", 
+	"on-scroll-up": "hyprctl dispatch workspace -1",
+	"on-scroll-down": "hyprctl dispatch workspace +1",
+},
+
+   "custom/web": {
+        "format": "󰖟",
+	"tooltip": false, 
+	"tooltip-format": "Firefox", 
+	"on-click": "hyprctl dispatch workspace 1",
+	"on-scroll-up": "hyprctl dispatch workspace -1",
+	"on-scroll-down": "hyprctl dispatch workspace +1",
+},
+
+   "custom/terminal": {
+        "format": "",
+	"tooltip": false, 
+	"tooltip-format": "Terminal", 
+	"on-click": "hyprctl dispatch workspace 2",
+	"on-scroll-up": "hyprctl dispatch workspace -1",
+	"on-scroll-down": "hyprctl dispatch workspace +1",
+},
+
+   "custom/apps": {
+        "format": "",
+	"tooltip": false, 
+	"tooltip-format": "Simplenote", 
+	"on-click": "hyprctl dispatch workspace 3",
+	"on-scroll-up": "hyprctl dispatch workspace -1",
+	"on-scroll-down": "hyprctl dispatch workspace +1",
+},
+
+   "custom/files": {
+        "format": "",
+	"tooltip": false, 
+	"tooltip-format": "File manager", 
+	"on-click": "hyprctl dispatch workspace 4",
+	"on-scroll-up": "hyprctl dispatch workspace -1",
+	"on-scroll-down": "hyprctl dispatch workspace +1",
+},
+
+   "custom/graph": {
+        "format": "󰋸",
+	"tooltip": false, 
+	"tooltip-format": "Simplenote", 
+	"on-click": "hyprctl dispatch workspace 5",
+	"on-scroll-up": "hyprctl dispatch workspace -1",
+	"on-scroll-down": "hyprctl dispatch workspace +1",
+},
+
+   "custom/vnc": {
+        "format": " ",
+	"tooltip": false, 
+	"tooltip-format": "", 
+	"on-click": "hyprctl dispatch workspace 10",
+	"on-scroll-up": "hyprctl dispatch workspace -1",
+	"on-scroll-down": "hyprctl dispatch workspace +1",
+},
+
+
+   "clock": {
+        "format":"{:%A %d.%m. %H:%M}",
+        "format-alt":"",
+	"tooltip": false,
+        "tooltip-format": "<tt>{calendar}</tt>"
+},
+
+   "pulseaudio/slider": {
+	"min": 0,
+	"max": 150,
+	"orientation": "horizontal",
+},
+
+   "custom/border-1": {
+	"format": "  ", 
+	"tooltip": false, 
+	"on-click": "hyprctl keyword general:border_size 1", 
+},
+
+   "custom/border-0": {
+	"format": " 󱃄 ", 
+	"tooltip": false, 
+	"on-click": "hyprctl keyword general:border_size 0", 
+},
+
+   "memory": {
+	"format": "󰍛  {used}G / {total}G",
+	"interval": 1,
+},
+
+   "cpu": {
+	"format": "󰻠  {usage} %",
+	"interval": 1,
+},
+
+   "custom/pin": {
+        "format":"",
+	"tooltip": false, 
+	"tooltip-format": "pin window", 
+	"on-click": "hyprctl dispatch pin"
+},
+
+   "custom/kill": {
+        "format":"",
+	"tooltip": false, 
+	"on-click": "~/.config/hypr/scripts/./hyprkill.sh"
+},
+
+   "custom/brightness": {
+        "format": "",
+	"tooltip": false, 
+	"tooltip-format": "brightnessctl i", 
+	"on-scroll-up": "brightnessctl s 3%+",
+	"on-scroll-down": "brightnessctl s 3%-"
+},
+
+     "network": {
+        "format-wifi" : "󰤨",
+        "format-disconnected" : "󰤭",
+	"tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+        "tooltip-format-ethernet": "󰀂  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+	"tooltip-format-disconnected": "Disconnected",
+	"on-click": "nm-connection-editor",
+	"on-click-right": "kitty -e systemctl restart NetworkManager",
+	"interval": 5,
+	"nospacing": 1,
+},
+
+    "pulseaudio": {
+        "format": "",
+        "format-muted": "󰝛",
+        "format-bluetooth": "󰂰",
+        "tooltip-format": "Volume : {volume}%",
+        "format-icons": {
+            "headphone": ""
+        },
+        "on-click": "pamixer -t",
+        "on-click-right": "~/.config/hypr/scripts/pavucontrol-hide.sh",
+        "scroll-step": 10,
+},
+
+   "custom/powermenu": {
+        "format": "",
+	"tooltip": false, 
+	"on-click": "nwg-bar",
+	"on-scroll-up": "hyprctl dispatch workspace -1",
+	"on-scroll-down": "hyprctl dispatch workspace +1",
+},
+
+    "battery": {
+        "states": {
+            "good": 95,
+            "warning": 21,
+            "critical": 20
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+     /*   "format-alt": "{time} {icon}", */
+        "format-icons": [
+            "󰂎",
+            "󰁺",
+            "󰁻",
+            "󰁼",
+            "󰁽",
+            "󰁾",
+            "󰁿",
+            "󰂀",
+            "󰂁",
+            "󰂂",
+            "󰁹"
+        ],
+        "tooltip-format": "{capacity} %",
+    },
+
+}
+
+/*
+󰖟
+
+
+
+󰋸
+
+*/

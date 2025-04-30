@@ -1,0 +1,235 @@
+#waybar {
+  border: 0px;
+  border-color: rgba (0,0,0,1.0);
+  
+border-radius: 0 0 0 0;
+  border-style: solid;
+
+  /*background-color: rgba(36,33,47,1.0);*/
+  background-color: #000000;
+  color: rgba (255,255,255,0.2);
+
+  font-family: CaskaydiaCove Nerd Font;
+  font-size: 16;
+
+  opacity: 1.0;
+
+}
+
+#custom-menu {
+  color: #ffffff;
+  border-radius: 6 6 6 6;
+  padding-left: 0px;
+  padding-right: 0px;
+  font-size: 19;
+  margin: 4 3 4 3;
+}
+
+#clock {
+  background-color: rgba (0,0,0,0.0);
+  border-radius: 24 6 6 6;
+  margin: 4 3 4 3;
+
+
+
+  padding-left: 18px;
+  padding-right: 25px;
+  font-size: 19;
+
+}
+
+#custom-firefox {
+  background-color: rgba (0,0,0,0.0);
+  border-radius: 6 0 0 6;
+  padding-left: 18px;
+  padding-right: 25px;
+  font-size: 19;
+  margin: 4 0 4 3;
+}
+
+#custom-pcmanfm {
+  background-color: rgba (0,0,0,0.0);
+  border-radius: 0 0 0 0;
+  padding-left: 18px;
+  padding-right: 25px;
+  font-size: 19;
+  margin: 4 0 4 0;
+}
+
+#custom-kitty {
+  background-color: rgba (0,0,0,0.0);
+  border-radius: 0 6 6 0;
+  padding-left: 18px;
+  padding-right: 25px;
+  font-size: 19;
+  margin: 4 3 4 0;
+}
+
+#custom-wallpaper {
+  background-color: rgba (0,0,0,0.0);
+  border-radius: 6 0 0 6;
+  padding-left: 18px;
+  padding-right: 25px;
+  font-size: 19;
+  margin: 4 0 4 3;
+}
+
+#custom-simplenote {
+  background-color: rgba (0,0,0,0.0);
+  border-radius: 0 0 0 0;
+  padding-left: 18px;
+  padding-right: 25px;
+  font-size: 19;
+  margin: 4 0 4 0;
+}
+
+#custom-shortwave {
+  background-color: rgba (0,0,0,0.0);
+  border-radius: 0  24 14 0;
+  padding-left: 18px;
+  padding-right: 25px;
+  font-size: 19;
+  margin: 4 3 4 0;
+}
+
+#pulseaudio-slider {
+  background-color: rgba (0,0,0,0.0);
+  border-radius: 24 6 6 14;
+  margin: 4 3 4 3;
+
+  font-size: 19;
+
+}
+#pulseaudio-slider slider {
+  background-color: rgba (0,0,0,0.3);
+  border-radius:  10.2 10.2;
+
+}
+#pulseaudio-slider trough {
+  margin: 4 3 4 3;
+
+}
+#pulseaudio-slider highlight {
+min-width: 100px;
+
+}
+
+
+
+#custom-border-0 {
+  background-color: rgba (0,0,0,0.0);
+  border-radius: 6 0 0 6;
+  padding-left: 2px;
+  padding-right: 2px;
+  font-size: 19;
+  margin: 4 0 4 3;
+}
+
+#custom-border-1 {
+  background-color: rgba (0,0,0,0.0);
+  border-radius: 0 0 0 0;
+  padding-left: 2px;
+  padding-right: 2px;
+  font-size: 19;
+  margin: 4 0 4 0;
+}
+
+#custom-pin {
+  background-color: rgba (0,0,0,0.0);
+  border-radius: 0 0 0 0;
+  padding-left: 18px;
+  padding-right: 25px;
+  font-size: 19;
+  margin: 4 0 4 0;
+}
+
+#custom-kill {
+  background-color: rgba (0,0,0,0.0);
+  border-radius: 0 6 6 0;
+  padding-left: 18px;
+  padding-right: 20px; 
+  font-size: 19;
+  margin: 4 3 4 0;
+}
+
+#custom-brightness {
+  background-color: rgba (0,0,0,0.0);
+  border-radius: 6 0 0 6;
+  padding-left: 18px;
+  padding-right: 25px;
+  font-size: 19;
+  margin: 4 0 4 3;
+}
+
+#network {
+  background-color: rgba (0,0,0,0.0);
+  border-radius: 0 0 0 0;
+  padding-left: 18px;
+  padding-right: 25px;
+  font-size: 19;
+  margin: 4 0 4 0;
+}
+
+#pulseaudio {
+  background-color: rgba (0,0,0,0.0);
+  border-radius: 0 6 6 0;
+  padding-left: 18px;
+  padding-right: 25px;
+  margin: 4 3 4 0;
+}
+
+#battery {
+  color: #ffffff;
+  background-color: rgba (172,122,214,0.1);
+  border-radius:  6 0 0 6;
+  padding-left: 18px;
+  padding-right: 18px;
+  font-size: 19;
+  margin: 4 0 4 3;
+	}
+	@keyframes blink {
+	  to {
+	    color: #38334b;
+	    background-color: #f38ba8;
+	  }
+	}
+	#battery.warning,
+	#battery.critical,
+	#battery.urgent {
+	  color: #181825;
+	  background-color: #ff0048;
+	  animation-name: blink;
+	  animation-duration: 0.5s;
+	  animation-timing-function: linear;
+	  animation-iteration-count: infinite;
+	  animation-direction: alternate;
+	}
+	#battery.charging {
+  padding-left: 18px;
+  padding-right: 25px;
+  font-size: 19;
+  margin: 4 0 4 3;
+	}
+
+#custom-powermenu {
+  color: #f4008a;
+  background-color: rgba (172,122,214,0.1);
+  border-radius: 0 0 8 0;
+  padding-left: 10px;
+  padding-right: 35px;
+  font-size: 19;
+  margin: 4 3 4 0;
+}
+
+
+
+tooltip {
+border-color: #38334b;
+background-color: #14161b;
+}
+
+tooltip label {
+background-color: #14161b;
+font-family: JetBrainsMono Nerd Font;
+font-size: 16;
+}
