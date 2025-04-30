@@ -24,7 +24,7 @@ super + d
 
 # file manager
 super + alt + p
-    pcmanfm
+    thunar
 
 # nitrogen
 super + n
@@ -32,7 +32,7 @@ super + n
 
 # firefox 
 super + alt + b
-   firefox 
+   zen-browser
 
 #pavucontrol
 super + shift + p
