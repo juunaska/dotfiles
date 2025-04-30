@@ -56,16 +56,16 @@ super + q
 
 # restart bspwm
 super + r
-    /home/test/.config/bspwm/bspwm-restart.sh
+    /home/test/.config/bspwm/./bspwm-restart.sh
 
 
 # sxhkd restart 
-super + r
+super + shift + r
     pkill -USR1 -x sxhkd
 
 
 # kill bspwm
-super + m
+super + alt + shift + m
     ~/.config/scripts/kill-bspwm.sh
 
 

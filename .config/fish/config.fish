@@ -1,4 +1,3 @@
-#_______________________________________________
 #     ________ ___  ________  ___  ___     
 #    |\  _____\\  \|\   ____\|\  \|\  \    
 #    \ \  \__/\ \  \ \  \___|\ \  \\\  \   
@@ -7,8 +6,6 @@
 #       \ \__\   \ \__\____\_\  \ \__\ \__\
 #        \|__|    \|__|\_________\|__|\|__|
 #                     \|_________|         
-#________________________________________________
-
 
 set fish_greeting
 
@@ -16,41 +13,47 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
- export VISUAL=nvim;
- export EDITOR=nvim;
+export VISUAL=vim
+export EDITOR=vim
 
-
-alias vim="nvim"
-alias cat="bat"
+alias upp="sudo pacman -Syu"
 alias ls="lsd"
+alias ffind="ls | grep"
+alias tomtom="cd /run/media/xest/INTERNAL/ && ls"
 
-alias q="clear && neofetch"
+alias q="clear && neofetch --ascii ~/.config/neofetch/cat2.txt"
 alias ff="fastfetch"
 alias dd="clear"
+alias ddd="clear"
 alias ddls="clear && ls"
 alias qqq="exit"
 alias sn="shutdown now"
 alias ll="ls -al"
 alias pacman="sudo pacman"
+alias restartnet="systemctl restart NetworkManager"
+#alias ssh="kitty +kitten ssh"
 
-alias py="pyradio -t white_on_black"
 alias pipes="pipes.sh"
-
+alias sahko="w3m kokotaulukko.fi/porssisahko"
+alias cal="cal --three --monday"
 alias hc="vim ~/.config/hypr/hyprland.conf"
 alias bc="vim ~/.config/bspwm/bspwmrc"
 alias fc="vim ~/.config/fish/config.fish"
 alias kc="vim ~/.config/kitty/kitty.conf"
+alias oc="vim ~/.config/openbox/rc.xml"
+alias sc="vim ~/.config/sxhkd/sxhkdrc"
 
-alias sweethome3d="/home/test/SweetHome3D-7.1/./SweetHome3D"
-alias neofetch="neofetch --ascii ~/.config/neofetch/ascii1.txt"
-
-alias volup="pactl set-sink-volume 0 +20%"
-alias voldown="pactl set-sink-volume 0 -20%"
+alias py="pyradio"
+alias sweethome3d="~/SweetHome3D-7.1/./SweetHome3D"
 
 
-alias brave="com.brave.Browser"
+# "AUTOSTART"
 
-xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
+# Tap to click
+#xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
+
+#setxkbmap fi
+
 
 #echo ""
 #fastfetch -l ~/.config/neofetch/fastfetch.txt

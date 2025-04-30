@@ -21,10 +21,10 @@
        under the mouse pointer. when followMouse is enabled -->
     <underMouse>no</underMouse>
     <!-- move focus under the mouse, even when the mouse is not moving -->
-    <focusDelay>660</focusDelay>
+    <focusDelay>230</focusDelay>
     <!-- when followMouse is enabled, the mouse must be inside the window for
        this many milliseconds (1000 = 1 sec) before moving focus to it -->
-    <raiseOnFocus>yes</raiseOnFocus>
+    <raiseOnFocus>no</raiseOnFocus>
     <!-- when followMouse is enabled, and a window is given focus by moving the
        mouse into it, also raise the window -->
   </focus>
@@ -46,8 +46,8 @@
                     'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>Box-Pink</name>
-    <titleLayout>C</titleLayout>
+    <name>Box</name>
+    <titleLayout>IMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -61,17 +61,17 @@
     <keepBorder>yes</keepBorder>
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
-      <name>Hack</name>
-      <size>15</size>
+      <name>JetBrainsMonoNL Nerd Font</name>
+      <size>30</size>
       <!-- font size in points -->
-      <weight>Bold</weight>
+      <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
-      <name>Hack</name>
-      <size>9</size>
+      <name>JetBrainsMonoNL Nerd Font</name>
+      <size>30</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -79,8 +79,8 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
-      <name>Hack</name>
-      <size>12</size>
+      <name>JetBrainsMonoNL Nerd Font</name>
+      <size>30</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -88,8 +88,8 @@
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuItem">
-      <name>Hack</name>
-      <size>11</size>
+      <name>JetBrainsMonoNL Nerd Font</name>
+      <size>30</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -98,16 +98,16 @@
     </font>
     <!--Desktops popup font-->
     <font place="ActiveOnScreenDisplay">
-      <name>Hack</name>
-      <size>22</size>
+      <name>JetBrainsMonoNL Nerd Font</name>
+      <size>30</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant/>
+      <slant>Normal</slant>
     </font>
     <font place="InactiveOnScreenDisplay">
-      <name>Hack</name>
-      <size>10</size>
+      <name>JetBrainsMonoNL Nerd Font</name>
+      <size>30</size>
       <!-- font size in points -->
       <weight>Normal</weight>
       <!-- 'bold' or 'normal' -->
@@ -124,19 +124,13 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>10</number>
+    <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>1</name>
-      <name>2</name>
-      <name>3</name>
-      <name>4</name>
-      <name>5</name>
-      <name>6</name>
-      <name>7</name>
-      <name>8</name>
-      <name>9</name>
-      <name>trash</name>
+      <name>Web</name>
+      <name>Term</name>
+      <name>Files</name>
+      <name>Office</name>
     </names>
     <popupTime>1500</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -163,10 +157,10 @@
        Many programs reserve space automatically, but you can use this in other
        cases. -->
   <margins>
-    <top>0</top>
-    <bottom>3</bottom>
-    <left>3</left>
-    <right>3</right>
+    <top>50</top>
+    <bottom>0</bottom>
+    <left>0</left>
+    <right>0</right>
   </margins>
   <dock>
     <position>Floating</position>
@@ -412,12 +406,42 @@
     </keybind>
     <keybind key="W-Return">
       <action name="Execute">
-        <command>lxterminal</command>
+        <command>kitty</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioRaiseVolume">
+      <action name="Execute">
+        <command>pamixer -i 5 --allow-boost</command>
+      </action>
+    </keybind>
+    <keybind key="XF86AudioLowerVolume">
+      <action name="Execute">
+        <command>pamixer -d 5</command>
+      </action>
+    </keybind>
+    <keybind key="W-A-Up">
+      <action name="Execute">
+        <command>redshift -O 9999</command>
+      </action>
+    </keybind>
+    <keybind key="W-A-Down">
+      <action name="Execute">
+        <command>redshift -O 3500</command>
+      </action>
+    </keybind>
+    <keybind key="W-A-Right">
+      <action name="Execute">
+        <command>redshift -x</command>
       </action>
     </keybind>
     <keybind key="W-A-p">
       <action name="Execute">
         <command>pcmanfm</command>
+      </action>
+    </keybind>
+    <keybind key="W-A-b">
+      <action name="Execute">
+        <command>firefox</command>
       </action>
     </keybind>
     <keybind key="W-d">
@@ -451,21 +475,6 @@
         <command>systemctl suspend</command>
       </action>
     </keybind>
-    <keybind key="W-C-Right">
-      <action name="Execute">
-        <command>redshift -x</command>
-      </action>
-    </keybind>
-    <keybind key="W-C-Up">
-      <action name="Execute">
-        <command>redshift -O 10000</command>
-      </action>
-    </keybind>
-    <keybind key="W-C-Down">
-      <action name="Execute">
-        <command>redshift -O 5000</command>
-      </action>
-    </keybind>
     <keybind key="XF86MonBrightnessUp">
       <action name="Execute">
         <command>brightnessctl set 6%+</command>
@@ -476,9 +485,9 @@
         <command>brightnessctl set 6%-</command>
       </action>
     </keybind>
-    <keybind key="W-m">
+    <keybind key="W-A-S-m">
       <action name="Execute">
-        <command>killall openbox</command>
+        <command>~/.config/scripts/./logout.sh</command>
       </action>
     </keybind>
     <keybind key="W-BackSpace">
