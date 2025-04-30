@@ -1,7 +1,5 @@
-pacman -S nvim fish git thunar flatpak base-devel shortwave kitty xorg xorg-xinit gdm hyprland 
 
-
-pacman -S nvim fish git thunar base-devel flatpak shortwave kitty ranger 
+pacman -S nvim fish git thunar base-devel flatpak shortwave kitty ranger rofi wofi 
 
 pacman -S xorg xorg-xinit hyprland gdm
 
