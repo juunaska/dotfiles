@@ -16,6 +16,7 @@ end
 export VISUAL=vim
 export EDITOR=vim
 
+alias vim="nvim"
 alias upp="sudo pacman -Syu"
 alias ls="lsd"
 alias ffind="ls | grep"
