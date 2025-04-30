@@ -1,2 +1,1 @@
-sudo pacman -S nvim fish git base-devel flatpak thunar tumbler shortwave rnote loupe evince gparted kitty ranger rofi wofi jgmenu fuzzel xorg xorg-xinit hyprland waybar openbox polybar nitrogen gdm && cd && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && yay -S niri lsd waypaper 
-
+sudo pacman -S nvim fish git base-devel flatpak thunar tumbler shortwave rnote loupe evince gparted dosfstools xcolor kitty ranger rofi wofi jgmenu fuzzel xorg xorg-xinit hyprland waybar openbox bspwm sxhkd polybar nitrogen gdm && cd && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si && yay -S niri lsd waypaper hyprpicker && echo "DONE! Then move configs to .config and chmod +x -R bspwm sxhkd"
