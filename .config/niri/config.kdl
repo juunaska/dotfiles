@@ -14,7 +14,10 @@ input {
 
             // For example:
             layout "fi"
-            options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
+           // options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
+
+	options "caps:super"
+
         }
     }
 
@@ -337,14 +340,16 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return { spawn "kitty"; }
     Mod+D { spawn "fuzzel"; }
+    Mod+Space { spawn "fuzzel"; }
+    Mod+Alt+Space { spawn "jgmenu_run"; }
     Mod+Alt+N { spawn "waypaper"; }
     Mod+W { spawn "~/.config/scripts/waybar-hyprland.sh"; }
     Mod+Alt+B { spawn "zen-browser"; }
     Mod+Alt+T { spawn "~/.config/scripts/tori.sh"; }
     Mod+Alt+M { spawn "~/.config/scripts/maps.sh"; }
     Mod+Alt+W { spawn "~/.config/scripts/weather.sh"; }
+    Mod+Alt+S { spawn "~/.config/scripts/simplenote.sh"; }
     Mod+Alt+P { spawn "thunar"; }
-    Mod+Alt+S { spawn "flatpak run com.simplenote.Simplenote"; }
     Super+Alt+L { spawn "swaylock"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
@@ -577,7 +582,6 @@ binds {
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
     // The quit action will show a confirmation dialog to avoid accidental exits.
-    Mod+Shift+E { quit; }
     Mod+Alt+Shift+M { quit; }
 
     // Powers off the monitors. To turn them back on, do any input like
