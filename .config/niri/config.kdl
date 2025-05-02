@@ -14,7 +14,7 @@ input {
 
             // For example:
             layout "fi"
-            // options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
+            options "grp:win_space_toggle,compose:ralt,ctrl:nocaps"
         }
     }
 
@@ -101,7 +101,7 @@ output "eDP-1" {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 4
+    gaps 6
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -146,21 +146,23 @@ layout {
     // You can change how the focus ring looks.
     focus-ring {
         // Uncomment this line to disable the focus ring.
-        // off
+   //      off
 
         // How many logical pixels the ring extends out from the windows.
-        width 4
+        width 2
 
         // Colors can be set in a variety of ways:
         // - CSS named colors: "red"
         // - RGB hex: "#rgb", "#rgba", "#rrggbb", "#rrggbbaa"
         // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
+        active-color "cyan"
+
 
         // Color of the ring on the active monitor.
-        active-color "rgba (0,0,0,0.0)"
+//        active-color "rgba (255,255,255,0.9)"
 
         // Color of the ring on inactive monitors.
-        inactive-color "rgba (0,0,0,0.0)"
+  //      inactive-color "rgba (0,0,0,0.0)"
 
         // You can also use gradients. They take precedence over solid colors.
         // Gradients are rendered the same as CSS linear-gradient(angle, from, to).
@@ -182,7 +184,7 @@ layout {
     border {
         // The settings are the same as for the focus ring.
         // If you enable the border, you probably want to disable the focus ring.
-      //  off
+      off
 
         width 2
       //  active-color "#7693fc"
@@ -582,3 +584,19 @@ binds {
     // moving the mouse or pressing any other key.
     Mod+Shift+P { power-off-monitors; }
 }
+
+
+// WINDOW RULES
+
+window-rule {
+    match app-id="waypaper"
+    open-floating true
+
+}
+window-rule {
+    match app-id="nm-connection-editor"
+    open-floating true
+}
+
+
+
