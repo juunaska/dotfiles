@@ -25,6 +25,7 @@ border-radius: 0 0 0 0;
   font-size: 16;
 
   opacity: 1.0;
+
 }
 
 #custom-menu{
@@ -43,9 +44,11 @@ border-radius: 0 0 0 0;
   font-size: 16;
   margin: 4 4 4 4;
   border-radius: 7 7 7 7;
+
+
 }
 
-#custom-browser-app{
+#custom-web{
   background-color: @widgets-background-dark;
   padding-left: 18px;
   padding-right: 18px;
@@ -54,69 +57,51 @@ border-radius: 0 0 0 0;
   border-radius: 7 0 0 7;
 }
 
-#custom-terminal-app{
+#custom-terminal{
   background-color: @widgets-background-dark;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 12px;
+  padding-right: 14px;
   font-size: 23;
   margin: 4 0 4 0;
   border-radius: 0 0 0 0;
 }
 
-
-#custom-filemanager-app{
+#custom-apps{
   background-color: @widgets-background-dark;
-  padding-left: 18px;
+  padding-left: 14px;
   padding-right: 18px;
   font-size: 19;
   margin: 4 0 4 0;
   border-radius: 0 0 0 0;
 }
 
-#custom-simplenote-app{
+#custom-files{
   background-color: @widgets-background-dark;
-  padding-left: 18px;
+  padding-left: 12px;
   padding-right: 18px;
   font-size: 19;
   margin: 4 0 4 0;
   border-radius: 0 0 0 0;
 }
 
-#custom-radio-app{
+#custom-graph{
   background-color: @widgets-background-dark;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 14px;
+  padding-right: 14px;
   font-size: 19;
   margin: 4 0 4 0;
   border-radius: 0 0 0 0;
 }
 
-#custom-sahko-app{
+#custom-vnc{
   background-color: @widgets-background-dark;
-  padding-left: 18px;
+  padding-left: 12px;
   padding-right: 18px;
-  font-size: 19;
-  margin: 4 0 4 0;
-  border-radius: 0 0 0 0;
-}
-
-#custom-weather-app{
-  background-color: @widgets-background-dark;
-  padding-left: 18px;
-  padding-right: 18px;
-  font-size: 19;
-  margin: 4 0 4 0;
-  border-radius: 0 0 0 0;
-}
-
-#custom-tori-app{
-  background-color: @widgets-background-dark;
-  padding-left: 18px;
-  padding-right: 18px;
-  font-size: 19;
+  font-size: 16;
   margin: 4 4 4 0;
   border-radius: 0 7 7 0;
 }
+
 #pulseaudio-slider {
   background-color: @widgets-background-dark;
   border-radius: 7 7 7 7;

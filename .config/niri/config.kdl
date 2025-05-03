@@ -158,7 +158,7 @@ layout {
         // - CSS named colors: "red"
         // - RGB hex: "#rgb", "#rgba", "#rrggbb", "#rrggbbaa"
         // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
-        active-color "cyan"
+        active-color "lightblue"
 
 
         // Color of the ring on the active monitor.
@@ -343,13 +343,15 @@ binds {
     Mod+Space { spawn "fuzzel"; }
     Mod+Alt+Space { spawn "jgmenu_run"; }
     Mod+Alt+N { spawn "waypaper"; }
-    Mod+W { spawn "~/.config/scripts/waybar-hyprland.sh"; }
+    Mod+W { spawn "~/.config/scripts/waybar/waybar-hide-hyprland.sh"; }
     Mod+Alt+B { spawn "zen-browser"; }
-    Mod+Alt+T { spawn "~/.config/scripts/tori.sh"; }
-    Mod+Alt+M { spawn "~/.config/scripts/maps.sh"; }
-    Mod+Alt+W { spawn "~/.config/scripts/weather.sh"; }
-    Mod+Alt+S { spawn "~/.config/scripts/simplenote.sh"; }
+    Mod+Alt+T { spawn "~/.config/scripts/zen-browser/tori.sh"; }
+    Mod+Alt+M { spawn "~/.config/scripts/zen-browser/maps.sh"; }
+    Mod+Alt+W { spawn "~/.config/scripts/zen-browser/weather.sh"; }
+    Mod+Alt+S { spawn "~/.config/scripts/zen-browser/simplenote.sh"; }
+    Mod+E { spawn "~/.config/scripts/zen-browser/sahko.sh"; }
     Mod+Alt+P { spawn "thunar"; }
+    Mod+Alt+R { spawn "shortwave"; }
     Super+Alt+L { spawn "swaylock"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.

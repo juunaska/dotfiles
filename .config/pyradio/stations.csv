@@ -1,9 +1,9 @@
-# Find lots more stations at http://www.iheart.com,
+# PyRadio Playlist File Format:
+# name,url,encoding,icon,profile,buffering,force-http,volume,referer
 AUS TRUCK COUNTRY,http://abm21.com.au:8000/CONTAINER24
 COUNTRY 108,http://streaming.silvacast.com/COUNTRY108.mp3
-ROCK,https://ais-sa3.cdnstream1.com/2606_128.aac
+BAGeL RADIO,https://ais-sa3.cdnstream1.com/2606_128.aac
 OLDSCHOOL HIPHOP,http://audiotainment-sw.streamabc.net/atsw-oldschoolhiphop-aac-128-2021007?sABC=680qr8qn%230%23q7s809s74070n543n7p5213q6qr39235%23gjy&aw_0_1st.playerid=twl&amsparams=playerid:twl;skey:1745742042
-
 Alternative (The Alternative Project),http://c9.prod.playlists.ihrhls.com/4447/playlist.m3u8
 American Roots (Boot Liquor - SomaFM),http://somafm.com/bootliquor.pls
 Celtic (ThistleRadio - SomaFM),http://somafm.com/thistle.pls
@@ -26,13 +26,13 @@ Jazz (Sonic Universe - SomaFM),http://somafm.com/startstream=sonicuniverse.pls
 Lounge (Illinois Street Lounge - SomaFM),http://somafm.com/illstreet.pls
 The Trip: [SomaFM],https://somafm.com/thetrip.pls
 Pop (PopTron! - SomaFM),http://somafm.com/poptron.pls
-Pop/Rock/Urban  (Frequence 3 - Paris) ,http://streams.frequence3.net/hd-mp3.m3u
+Pop/Rock/Urban  (Frequence 3 - Paris),http://streams.frequence3.net/hd-mp3.m3u
 Progressive (Tags Trance Trip - SomaFM),http://somafm.com/tagstrance.pls
 Public Radio (NPR National Public Radio Stream),https://npr-ice.streamguys1.com/live.mp3
 Reggae Dancehall (Ragga Kings),https://raggakings.radio:8443/stream.ogg
 Heavyweight Reggae,https://somafm.com/reggae.pls
 Rock (Digitalis - SomaFM),http://somafm.com/digitalis.pls
-Vox Noctem: Rock-Goth, http://r2d2.voxnoctem.de:8000/voxnoctem.mp3
+Vox Noctem: Rock-Goth,http://r2d2.voxnoctem.de:8000/voxnoctem.mp3
 Beyond Metal (Progressive - Symphonic),http://streamingV2.shoutcast.com/BeyondMetal
 Metal Detector,https://somafm.com/metal.pls
 DanceUK,https://www.internet-radio.com/servers/tools/playlistgenerator/?u=http://uk2.internet-radio.com:8024/listen.pls&t=.pls

@@ -9,22 +9,24 @@
 
 "modules-left": [
  	"custom/menu",
+ 	"custom/web",
+	"custom/terminal",
+	"custom/apps",
+ 	"custom/files",
+ 	"custom/graph",
+ 	"custom/vnc",
         "clock",
 ],
 
 "modules-center": [
- 	"custom/browser-app",
- 	"custom/terminal-app",
- 	"custom/filemanager-app",
- 	"custom/simplenote-app",
- 	"custom/radio-app",
- 	"custom/sahko-app",
- 	"custom/weather-app",
- 	"custom/tori-app",
 
 ],
 
 "modules-right": [
+	"custom/border-0",
+	"custom/border-1",
+	"custom/pin",
+        "custom/kill",
 	"pulseaudio/slider",
 	"custom/brightness",
 	"network",
@@ -41,57 +43,67 @@
 	"on-scroll-down": "hyprctl dispatch workspace +1",
 },
 
+   "custom/web": {
+        "format": "󰖟",
+	"tooltip": false, 
+	"tooltip-format": "Firefox", 
+	"on-click": "hyprctl dispatch workspace 1",
+	"on-scroll-up": "hyprctl dispatch workspace -1",
+	"on-scroll-down": "hyprctl dispatch workspace +1",
+},
+
+   "custom/terminal": {
+        "format": "",
+	"tooltip": false, 
+	"tooltip-format": "Terminal", 
+	"on-click": "hyprctl dispatch workspace 2",
+	"on-scroll-up": "hyprctl dispatch workspace -1",
+	"on-scroll-down": "hyprctl dispatch workspace +1",
+},
+
+   "custom/apps": {
+        "format": "",
+	"tooltip": false, 
+	"tooltip-format": "Simplenote", 
+	"on-click": "hyprctl dispatch workspace 3",
+	"on-scroll-up": "hyprctl dispatch workspace -1",
+	"on-scroll-down": "hyprctl dispatch workspace +1",
+},
+
+   "custom/files": {
+        "format": "",
+	"tooltip": false, 
+	"tooltip-format": "File manager", 
+	"on-click": "hyprctl dispatch workspace 4",
+	"on-scroll-up": "hyprctl dispatch workspace -1",
+	"on-scroll-down": "hyprctl dispatch workspace +1",
+},
+
+   "custom/graph": {
+        "format": "󰋸",
+	"tooltip": false, 
+	"tooltip-format": "Simplenote", 
+	"on-click": "hyprctl dispatch workspace 5",
+	"on-scroll-up": "hyprctl dispatch workspace -1",
+	"on-scroll-down": "hyprctl dispatch workspace +1",
+},
+
+   "custom/vnc": {
+        "format": " ",
+	"tooltip": false, 
+	"tooltip-format": "", 
+	"on-click": "hyprctl dispatch workspace 10",
+	"on-scroll-up": "hyprctl dispatch workspace -1",
+	"on-scroll-down": "hyprctl dispatch workspace +1",
+},
+
+
    "clock": {
         "format":"{:%A %d.%m. %H:%M}",
         "format-alt":"",
 	"tooltip": false,
         "tooltip-format": "<tt>{calendar}</tt>"
 },
-
-   "custom/browser-app": {
-        "format": "󰖟",
-	"on-click": "zen-browser --new-window",
-},
-
-   "custom/terminal-app": {
-        "format": "",
-	"on-click": "kitty",
-},
-
-   "custom/filemanager-app": {
-        "format": "",
-	"on-click": "thunar",
-},
-
-   "custom/simplenote-app": {
-        "format": "",
-	"on-click": "zen-browser --new-window https://app.simplenote.com",
-},
-
-   "custom/radio-app": {
-        "format": "",
-	"on-click": "shortwave",
-},
-
-   "custom/sahko-app": {
-        "format": "",
-	"on-click": "zen-browser --new-window https://www.porssisahko.fi/",
-},
-
-   "custom/weather-app": {
-        "format": "",
-	"on-click": "zen-browser --new-window https://www.foreca.fi/Finland/Vesilahti/10vrk",
-},
-
-   "custom/tori-app": {
-        "format": "󰰥",
-	"on-click": "zen-browser --new-window https://www.tori.fi/",
-},
-
-
-
-
-
 
    "pulseaudio/slider": {
 	"min": 0,
