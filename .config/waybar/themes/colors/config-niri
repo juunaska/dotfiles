@@ -21,17 +21,17 @@
  	"custom/radio-app",
  	"custom/sahko-app",
  	"custom/weather-app",
- 	"custom/tori-app",
+	"custom/tori-app",
+ 	"pulseaudio/slider",
+	"pulseaudio",
+	"custom/brightness",
+	"network",
+	"battery",
+	"custom/powermenu",
 
 ],
 
 "modules-right": [
-	"pulseaudio/slider",
-	"custom/brightness",
-	"network",
-	"pulseaudio",
-	"battery",
-	"custom/powermenu",
 
 ],
 

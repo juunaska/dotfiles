@@ -139,8 +139,8 @@ border-radius: 0 0 0 0;
 
 #pulseaudio-slider {
   background-color: @widgets-background-dark;
-  border-radius: 7 7 7 7;
-  margin: 4 4 4 4;
+  border-radius: 7 0 0 7;
+  margin: 4 0 4 4;
   font-size: 19;
 }
 #pulseaudio-slider slider {
@@ -149,7 +149,7 @@ border-radius: 0 0 0 0;
 
 }
 #pulseaudio-slider trough {
- margin: 0 5 0 5;
+ margin: 0 4 0 4;
 
 }
 #pulseaudio-slider highlight {
@@ -157,12 +157,22 @@ min-width: 100px;
 
 }
 
+#pulseaudio {
+  background-color: @widgets-background-dark;
+  color: @text-dark;
+  border-radius: 0 6 6 0;
+  padding-left: 10px;
+  padding-right: 25px;
+  margin: 4 4 4 0;
+}
+
+
 #custom-brightness {
   background-color: @widgets-background-dark;
   color: @text-dark;
   border-radius: 6 0 0 6;
   padding-left: 18px;
-  padding-right: 25px;
+  padding-right: 22px;
   font-size: 19;
   margin: 4 0 4 4;
 }
@@ -170,19 +180,10 @@ min-width: 100px;
 #network {
   background-color: @widgets-background-dark;
   color: @text-dark;
-  border-radius: 0 0 0 0;
-  padding-left: 18px;
+  border-radius: 0 7 7 0;
+  padding-left: 10px;
   padding-right: 25px;
   font-size: 19;
-  margin: 4 0 4 0;
-}
-
-#pulseaudio {
-  background-color: @widgets-background-dark;
-  color: @text-dark;
-  border-radius: 0 6 6 0;
-  padding-left: 18px;
-  padding-right: 25px;
   margin: 4 4 4 0;
 }
 
