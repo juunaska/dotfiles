@@ -8,11 +8,11 @@
 	/* "margin":	"0 140 0 140",*/
 
 "modules-left": [
-        "clock",
 ],
 
 "modules-center": [
  	"custom/menu",
+        "clock",
  	"custom/browser-app",
  	"custom/terminal-app",
  	"custom/filemanager-app",
