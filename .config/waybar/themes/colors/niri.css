@@ -191,10 +191,10 @@ min-width: 100px;
   color: @text-light;
   background-color: @widgets-background-dark;
   padding-left: 18px;
-  padding-right: 18px;
+  padding-right: 10px;
   font-size: 19;
-  border-radius: 7 7 7 7;
-  margin: 4 4 4 4;
+  border-radius: 7 0 0 7;
+  margin: 4 0 4 4;
 
 	}
 	@keyframes blink {
@@ -214,18 +214,18 @@ min-width: 100px;
 	}
 	#battery.charging {
   padding-left: 18px;
-  padding-right: 18px;
+  padding-right: 14px;
   font-size: 19;
 	}
 
 #custom-powermenu {
 
   background-color: @widgets-background-dark;
-  padding-left: 18px;
+  padding-left: 10px;
   padding-right: 20px;
   font-size: 19;
-  margin: 4 8 4 4;
-  border-radius: 7 7 7 7;
+  margin: 4 8 4 0;
+  border-radius: 0 7 7 0;
 
 }
 
