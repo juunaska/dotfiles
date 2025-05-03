@@ -343,7 +343,7 @@ binds {
     Mod+Space { spawn "fuzzel"; }
     Mod+Alt+Space { spawn "jgmenu_run"; }
     Mod+Alt+N { spawn "waypaper"; }
-    Mod+W { spawn "~/.config/scripts/waybar/waybar-hide-hyprland.sh"; }
+    Mod+W { spawn "~/.config/scripts/waybar/waybar-hide-niri.sh"; }
     Mod+Alt+B { spawn "zen-browser"; }
     Mod+Alt+T { spawn "~/.config/scripts/zen-browser/tori.sh"; }
     Mod+Alt+M { spawn "~/.config/scripts/zen-browser/maps.sh"; }

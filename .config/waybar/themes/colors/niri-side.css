@@ -30,10 +30,7 @@ border-radius: 0 0 0 0;
 #custom-menu{
   color: #7693fc;
   background-color: @widgets-background-dark;
-  padding-left: 18px;
-  padding-right: 20px;
   font-size: 19;
-  margin: 4 4 4 8;
   border-radius: 7 7 7 7;
 }
 
@@ -41,86 +38,66 @@ border-radius: 0 0 0 0;
   background-color: @widgets-background-dark;
   padding: 10 10 10 10;
   font-size: 16;
-  margin: 4 4 4 4;
   border-radius: 7 7 7 7;
 }
 
 #custom-browser-app{
   background-color: @widgets-background-dark;
-  padding-left: 18px;
-  padding-right: 18px;
   font-size: 19;
-  margin: 4 0 4 4;
   border-radius: 7 0 0 7;
 }
 
 #custom-terminal-app{
   background-color: @widgets-background-dark;
-  padding-left: 18px;
-  padding-right: 18px;
   font-size: 23;
-  margin: 4 0 4 0;
   border-radius: 0 0 0 0;
 }
 
 
 #custom-filemanager-app{
   background-color: @widgets-background-dark;
-  padding-left: 18px;
-  padding-right: 18px;
   font-size: 19;
-  margin: 4 0 4 0;
+  border-radius: 0 0 0 0;
+}
+
+#custom-protondrive-app{
+  background-color: @widgets-background-dark;
+  font-size: 19;
   border-radius: 0 0 0 0;
 }
 
 #custom-simplenote-app{
   background-color: @widgets-background-dark;
-  padding-left: 18px;
-  padding-right: 18px;
   font-size: 19;
-  margin: 4 0 4 0;
   border-radius: 0 0 0 0;
 }
 
 #custom-radio-app{
   background-color: @widgets-background-dark;
-  padding-left: 18px;
-  padding-right: 18px;
   font-size: 19;
-  margin: 4 0 4 0;
   border-radius: 0 0 0 0;
 }
 
 #custom-sahko-app{
   background-color: @widgets-background-dark;
-  padding-left: 18px;
-  padding-right: 18px;
   font-size: 19;
-  margin: 4 0 4 0;
   border-radius: 0 0 0 0;
 }
 
 #custom-weather-app{
   background-color: @widgets-background-dark;
-  padding-left: 18px;
-  padding-right: 18px;
   font-size: 19;
-  margin: 4 0 4 0;
   border-radius: 0 0 0 0;
 }
 
 #custom-tori-app{
   background-color: @widgets-background-dark;
-  padding-left: 18px;
-  padding-right: 18px;
   font-size: 19;
-  margin: 4 4 4 0;
   border-radius: 0 7 7 0;
 }
 #pulseaudio-slider {
   background-color: @widgets-background-dark;
   border-radius: 7 7 7 7;
-  margin: 4 4 4 4;
   font-size: 19;
 }
 #pulseaudio-slider slider {
@@ -129,7 +106,6 @@ border-radius: 0 0 0 0;
 
 }
 #pulseaudio-slider trough {
- margin: 0 5 0 5;
 
 }
 #pulseaudio-slider highlight {
@@ -137,84 +113,31 @@ min-width: 100px;
 
 }
 
-#custom-border-0 {
-
-  background-color: @widgets-background-dark;
-  color: @text-dark;
-  border-radius: 6 0 0 6;
-  padding-left: 10px;
-  padding-right: 5px;
-  font-size: 19;
-  margin: 4 0 4 4;
-}
-
-#custom-border-1 {
-  background-color: @widgets-background-dark;
-  color: @text-dark;
-  border-radius: 0 0 0 0;
-  padding-left: 5px;
-  padding-right: 5px;
-  font-size: 19;
-  margin: 4 0 4 0;
-}
-
-#custom-pin {
-  background-color: @widgets-background-dark;
-  color: @text-dark;
-  border-radius: 0 0 0 0;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 19;
-  margin: 4 0 4 0;
-}
-
-#custom-kill {
-  background-color: @widgets-background-dark;
-  color: @text-dark;
-  border-radius: 0 6 6 0;
-  padding-left: 18px;
-  padding-right: 25px;
-  font-size: 19;
-  margin: 4 4 4 0;
-}
-
 #custom-brightness {
   background-color: @widgets-background-dark;
   color: @text-dark;
   border-radius: 6 0 0 6;
-  padding-left: 18px;
-  padding-right: 25px;
   font-size: 19;
-  margin: 4 0 4 4;
 }
 
 #network {
   background-color: @widgets-background-dark;
   color: @text-dark;
   border-radius: 0 0 0 0;
-  padding-left: 18px;
-  padding-right: 25px;
   font-size: 19;
-  margin: 4 0 4 0;
 }
 
 #pulseaudio {
   background-color: @widgets-background-dark;
   color: @text-dark;
   border-radius: 0 6 6 0;
-  padding-left: 18px;
-  padding-right: 25px;
-  margin: 4 4 4 0;
 }
 
 #battery {
   color: @text-light;
   background-color: @widgets-background-dark;
-  padding-left: 18px;
-  padding-right: 18px;
   font-size: 19;
   border-radius: 7 7 7 7;
-  margin: 4 4 4 4;
 
 	}
 	@keyframes blink {
@@ -233,18 +156,13 @@ min-width: 100px;
 	  animation-direction: alternate;
 	}
 	#battery.charging {
-  padding-left: 18px;
-  padding-right: 18px;
   font-size: 19;
 	}
 
 #custom-powermenu {
 
   background-color: @widgets-background-dark;
-  padding-left: 18px;
-  padding-right: 20px;
   font-size: 19;
-  margin: 4 8 4 4;
   border-radius: 7 7 7 7;
 
 }
