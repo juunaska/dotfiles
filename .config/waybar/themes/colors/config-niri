@@ -8,11 +8,11 @@
 	/* "margin":	"0 140 0 140",*/
 
 "modules-left": [
+        "clock",
 ],
 
 "modules-center": [
  	"custom/menu",
-        "clock",
  	"custom/browser-app",
  	"custom/terminal-app",
  	"custom/filemanager-app",
@@ -22,6 +22,10 @@
  	"custom/sahko-app",
  	"custom/weather-app",
  	"custom/tori-app",
+
+],
+
+"modules-right": [
 	"pulseaudio/slider",
 	"custom/brightness",
 	"network",
@@ -29,9 +33,6 @@
 	"battery",
 	"custom/powermenu",
 
-],
-
-"modules-right": [
 ],
 
    "custom/menu": {
