@@ -187,7 +187,7 @@ animations {
 }
 
 window-rule {
-    geometry-corner-radius 8
+    geometry-corner-radius 4
     clip-to-geometry true
 }
 
@@ -202,7 +202,7 @@ window-rule {
     draw-border-with-background false
     match is-active=true
     match is-active=false
-    opacity 0.98
+    opacity 1.00
 }
 
 binds {
