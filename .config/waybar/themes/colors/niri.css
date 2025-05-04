@@ -35,26 +35,26 @@ border-radius: 0 0 0 0;
   padding-left: 18px;
   padding-right: 20px;
   font-size: 19;
-  margin: 4 4 4 8;
-  border-radius: 7 7 7 7;
+  margin: 0 0 4 0;
+  border-radius: 0 0 0 0;
 }
 
 #clock {
   background-color: @widgets-background-dark;
   padding: 10 10 10 10;
   font-size: 16;
-  margin: 4 4 4 8;
-  border-radius: 7 7 7 7;
+  margin: 0 4 4 0;
+  border-radius: 0 0 14 0;
 }
 
 #custom-browser-app {
   background-color: @widgets-background-dark;
   color: @text-dark;
-  border-radius: 7 0 0 7;
+  border-radius: 0 0 0 14;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 19;
-  margin: 4 0 4 4;
+  margin: 0 0 4 4;
 }
 
 #custom-terminal-app {
@@ -64,7 +64,7 @@ border-radius: 0 0 0 0;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 23;
-  margin: 4 0 4 0;
+  margin: 0 0 4 0;
 }
 
 #custom-filemanager-app {
@@ -74,7 +74,7 @@ border-radius: 0 0 0 0;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 19;
-  margin: 4 0 4 0;
+  margin: 0 0 4 0;
 }
 
 #custom-protondrive-app {
@@ -84,7 +84,7 @@ border-radius: 0 0 0 0;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 19;
-  margin: 4 0 4 0;
+  margin: 0 0 4 0;
 }
 
 #custom-simplenote-app {
@@ -94,7 +94,7 @@ border-radius: 0 0 0 0;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 19;
-  margin: 4 0 4 0;
+  margin: 0 0 4 0;
 }
 
 #custom-radio-app {
@@ -104,7 +104,7 @@ border-radius: 0 0 0 0;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 19;
-  margin: 4 0 4 0;
+  margin: 0 0 4 0;
 }
 
 #custom-sahko-app {
@@ -114,7 +114,7 @@ border-radius: 0 0 0 0;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 19;
-  margin: 4 0 4 0;
+  margin: 0 0 4 0;
 }
 
 #custom-weather-app {
@@ -124,23 +124,23 @@ border-radius: 0 0 0 0;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 19;
-  margin: 4 0 4 0;
+  margin: 0 0 4 0;
 }
 
 #custom-tori-app {
   background-color: @widgets-background-dark;
   color: @text-dark;
-  border-radius: 0 7 7 0;
+  border-radius: 0 0 14 0;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 19;
-  margin: 4 4 4 0;
+  margin: 0 4 4 0;
 }
 
 #pulseaudio-slider {
   background-color: @widgets-background-dark;
-  border-radius: 7 0 0 7;
-  margin: 4 0 4 4;
+  border-radius: 0 0 0 14;
+  margin: 0 0 4 4;
   font-size: 19;
 }
 #pulseaudio-slider slider {
@@ -160,31 +160,31 @@ min-width: 100px;
 #pulseaudio {
   background-color: @widgets-background-dark;
   color: @text-dark;
-  border-radius: 0 6 6 0;
+  border-radius: 0 0 14 0;
   padding-left: 10px;
   padding-right: 25px;
-  margin: 4 4 4 0;
+  margin: 0 4 4 0;
 }
 
 
 #custom-brightness {
   background-color: @widgets-background-dark;
   color: @text-dark;
-  border-radius: 6 0 0 6;
+  border-radius: 0 0 0 14;
   padding-left: 18px;
   padding-right: 22px;
   font-size: 19;
-  margin: 4 0 4 4;
+  margin: 0 0 4 4;
 }
 
 #network {
   background-color: @widgets-background-dark;
   color: @text-dark;
-  border-radius: 0 7 7 0;
+  border-radius: 0 0 14 0;
   padding-left: 10px;
   padding-right: 25px;
   font-size: 19;
-  margin: 4 4 4 0;
+  margin: 0 4 4 0;
 }
 
 #battery {
@@ -193,8 +193,8 @@ min-width: 100px;
   padding-left: 18px;
   padding-right: 10px;
   font-size: 19;
-  border-radius: 7 0 0 7;
-  margin: 4 0 4 4;
+  border-radius: 0 0 0 14;
+  margin: 0 0 4 4;
 
 	}
 	@keyframes blink {
@@ -224,8 +224,8 @@ min-width: 100px;
   padding-left: 10px;
   padding-right: 20px;
   font-size: 19;
-  margin: 4 8 4 0;
-  border-radius: 0 7 7 0;
+  margin: 0 0 4 0;
+  border-radius: 0 0 0 0;
 
 }
 
