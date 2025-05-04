@@ -32,6 +32,7 @@
 	"network",
 	"battery",
 	"custom/powermenu",
+	"custom/swaync",
 
 
 
@@ -191,6 +192,13 @@
 	"on-click": "nwg-bar",
 	"on-scroll-up": "hyprctl dispatch workspace -1",
 	"on-scroll-down": "hyprctl dispatch workspace +1",
+},
+
+   "custom/swaync": {
+        "format": "",
+	"tooltip": true, 
+        "tooltip-format": "Notifications",
+	"on-click": "swaync-client -t -R",
 },
 
     "battery": {

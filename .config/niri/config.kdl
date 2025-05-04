@@ -30,7 +30,7 @@ mouse {
     // warp-mouse-to-focus
 
     // Focus windows and outputs automatically when moving the mouse into them.
-    focus-follows-mouse
+   // focus-follows-mouse
 }
 
 layout {
@@ -86,7 +86,7 @@ tab-indicator {
     }
 }
 output "eDP-1" {
-    scale 1.100000
+    scale 1.000000
     transform "normal"
     position x=0 y=-1080
     mode "1920x1080"
@@ -103,6 +103,7 @@ workspace "common"
 workspace "media"
 prefer-no-csd
 spawn-at-startup "swww-daemon"
+spawn-at-startup "swaync --config ~/.config/swaync/config.json --style ~/.config/swaync/style.css"
 spawn-at-startup "wayland-satalite"
 spawn-at-startup " dbus-update-activation-environment --all"
 spawn-at-startup " systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
