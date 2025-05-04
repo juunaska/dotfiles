@@ -1,10 +1,10 @@
 /*@define-color background rgba (142,134,111,0.9);*/
 /*@define-color background rgba (255,255,255,0.0);*/
-@define-color background rgba (0,0,0,1.0);
-@define-color widgets-background-dark #000000;
+@define-color background rgba (38,34,26,0.91);
+@define-color widgets-background-dark #a39373;
 @define-color widgets-background-light #bc84af;
-@define-color text-light #ffffff;
-@define-color text-dark #ffffff;
+@define-color text-light #26221a;
+@define-color text-dark #26221a;
 
 
 
