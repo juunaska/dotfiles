@@ -30,7 +30,7 @@ mouse {
     // warp-mouse-to-focus
 
     // Focus windows and outputs automatically when moving the mouse into them.
-   // focus-follows-mouse
+    focus-follows-mouse max-scroll-amount="0%"
 }
 
 layout {
