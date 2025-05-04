@@ -198,7 +198,7 @@
         "format": "",
 	"tooltip": true, 
         "tooltip-format": "Notifications",
-	"on-click": "swaync-client -t -R",
+	"on-click": "swaync-client -t",
 },
 
     "battery": {
