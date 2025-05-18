@@ -1,8 +1,8 @@
 /*@define-color background rgba (142,134,111,0.9);*/
-@define-color background rgba (255,255,255,0.0);
-/*@define-color background rgba (0,0,0,1.0);*/
-@define-color widgets-background-dark #1c1c1f;
-@define-color widgets-background-light #bc84af;
+/*@define-color background rgba (255,255,255,0.0);*/
+@define-color background rgba (0,0,0,0.00);
+@define-color widgets-background-dark #21222c;
+@define-color widgets-background-light #21222c;
 @define-color text-light #ffffff;
 @define-color text-dark #ffffff;
 
@@ -25,35 +25,36 @@ border-radius: 0 0 0 0;
   font-size: 16;
 
   opacity: 1.0;
+  padding: 0 90 0 90;
 
 }
 
 #custom-menu{
-  color: #7693fc;
+  color: #ff0048;
   background-color: @widgets-background-dark;
   padding-left: 18px;
   padding-right: 20px;
   font-size: 19;
-  margin: 4 4 4 8;
-  border-radius: 7 7 7 7;
+  margin: 4 2 0 4;
+  border-radius: 4 4 4 4;
 }
 
 #clock {
-  background-color: @widgets-background-dark;
-  padding: 10 10 10 10;
+  background-color: #ff0048;
+  padding: 10 22 10 10;
   font-size: 16;
-  margin: 4 4 4 4;
-  border-radius: 7 7 7 7;
+  margin: 4 4 0 2;
+  border-radius: 4 4 4 4;
 }
 
 #custom-browser-app {
   background-color: @widgets-background-dark;
   color: @text-dark;
-  border-radius: 0 0 0 14;
+  border-radius: 4 0 0 4;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 19;
-  margin: 0 0 4 4;
+  margin: 4 0 4 4;
 }
 
 #custom-terminal-app {
@@ -63,7 +64,7 @@ border-radius: 0 0 0 0;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 23;
-  margin: 0 0 4 0;
+  margin: 4 0 4 0;
 }
 
 #custom-filemanager-app {
@@ -73,7 +74,7 @@ border-radius: 0 0 0 0;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 19;
-  margin: 0 0 4 0;
+  margin: 4 0 4 0;
 }
 
 #custom-protondrive-app {
@@ -83,7 +84,7 @@ border-radius: 0 0 0 0;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 19;
-  margin: 0 0 4 0;
+  margin: 4 0 4 0;
 }
 
 #custom-simplenote-app {
@@ -93,7 +94,7 @@ border-radius: 0 0 0 0;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 19;
-  margin: 0 0 4 0;
+  margin: 4 0 4 0;
 }
 
 #custom-radio-app {
@@ -103,7 +104,7 @@ border-radius: 0 0 0 0;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 19;
-  margin: 0 0 4 0;
+  margin: 4 0 4 0;
 }
 
 #custom-sahko-app {
@@ -113,7 +114,7 @@ border-radius: 0 0 0 0;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 19;
-  margin: 0 0 4 0;
+  margin: 4 0 4 0;
 }
 
 #custom-weather-app {
@@ -123,179 +124,77 @@ border-radius: 0 0 0 0;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 19;
-  margin: 0 0 4 0;
+  margin: 4 0 4 0;
 }
 
 #custom-tori-app {
   background-color: @widgets-background-dark;
   color: @text-dark;
-  border-radius: 0 0 14 0;
+  border-radius: 0 4 4 0;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 19;
-  margin: 0 4 4 0;
-}
-
-#custom-web{
-  background-color: @widgets-background-dark;
-  padding-left: 18px;
-  padding-right: 18px;
-  font-size: 19;
-  margin: 4 0 4 4;
-  border-radius: 7 0 0 7;
-}
-
-#custom-terminal{
-  background-color: @widgets-background-dark;
-  padding-left: 12px;
-  padding-right: 14px;
-  font-size: 23;
-  margin: 4 0 4 0;
-  border-radius: 0 0 0 0;
-}
-
-#custom-apps{
-  background-color: @widgets-background-dark;
-  padding-left: 14px;
-  padding-right: 18px;
-  font-size: 19;
-  margin: 4 0 4 0;
-  border-radius: 0 0 0 0;
-}
-
-#custom-files{
-  background-color: @widgets-background-dark;
-  padding-left: 12px;
-  padding-right: 18px;
-  font-size: 19;
-  margin: 4 0 4 0;
-  border-radius: 0 0 0 0;
-}
-
-#custom-graph{
-  background-color: @widgets-background-dark;
-  padding-left: 14px;
-  padding-right: 14px;
-  font-size: 19;
-  margin: 4 0 4 0;
-  border-radius: 0 0 0 0;
-}
-
-#custom-vnc{
-  background-color: @widgets-background-dark;
-  padding-left: 12px;
-  padding-right: 18px;
-  font-size: 16;
   margin: 4 4 4 0;
-  border-radius: 0 7 7 0;
 }
 
 #pulseaudio-slider {
   background-color: @widgets-background-dark;
-  border-radius: 7 7 7 7;
-  margin: 4 4 4 4;
+  border-radius: 4 0 0 4;
+  margin: 4 0 2 4;
   font-size: 19;
 }
 #pulseaudio-slider slider {
-  background-color: rgba (255,255,255,0.1);
+  background-color: #26221a;
   border-radius:  17;
 
 }
 #pulseaudio-slider trough {
- margin: 0 5 0 5;
+ margin: 4 4 0 4;
 
 }
 #pulseaudio-slider highlight {
 min-width: 100px;
-}
 
-#custom-keyboard {
-  background-color: @widgets-background-dark;
-  color: @text-dark;
-  border-radius: 6 0 0 6;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 19;
-  margin: 4 0 4 4;
-}
-
-#custom-border-0 {
-  background-color: @widgets-background-dark;
-  color: @text-dark;
-  border-radius: 0 0 0 0;
-  padding-left: 5px;
-  padding-right: 5px;
-  font-size: 19;
-  margin: 4 0 4 0;
-}
-
-#custom-border-1 {
-  background-color: @widgets-background-dark;
-  color: @text-dark;
-  border-radius: 0 0 0 0;
-  padding-left: 5px;
-  padding-right: 5px;
-  font-size: 19;
-  margin: 4 0 4 0;
-}
-
-#custom-pin {
-  background-color: @widgets-background-dark;
-  color: @text-dark;
-  border-radius: 0 0 0 0;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 19;
-  margin: 4 0 4 0;
-}
-
-#custom-kill {
-  background-color: @widgets-background-dark;
-  color: @text-dark;
-  border-radius: 0 6 6 0;
-  padding-left: 18px;
-  padding-right: 25px;
-  font-size: 19;
-  margin: 4 4 4 0;
-}
-
-#custom-brightness {
-  background-color: @widgets-background-dark;
-  color: @text-dark;
-  border-radius: 6 0 0 6;
-  padding-left: 18px;
-  padding-right: 25px;
-  font-size: 19;
-  margin: 4 0 4 4;
-}
-
-#network {
-  background-color: @widgets-background-dark;
-  color: @text-dark;
-  border-radius: 0 0 0 0;
-  padding-left: 18px;
-  padding-right: 25px;
-  font-size: 19;
-  margin: 4 0 4 0;
 }
 
 #pulseaudio {
   background-color: @widgets-background-dark;
   color: @text-dark;
-  border-radius: 0 6 6 0;
-  padding-left: 18px;
+  border-radius: 0 4 4 0;
+  padding-left: 10px;
   padding-right: 25px;
-  margin: 4 4 4 0;
+  margin: 4 2 2 0;
+}
+
+
+#custom-brightness {
+  background-color: @widgets-background-dark;
+  color: @text-dark;
+  border-radius: 4 0 0 4;
+  padding-left: 18px;
+  padding-right: 22px;
+  font-size: 19;
+  margin: 4 0 2 2;
+}
+
+#network {
+  background-color: @widgets-background-dark;
+  color: @text-dark;
+  border-radius: 0 4 4 0;
+  padding-left: 10px;
+  padding-right: 25px;
+  font-size: 19;
+  margin: 4 2 2 0;
 }
 
 #battery {
   color: @text-light;
   background-color: @widgets-background-dark;
   padding-left: 18px;
-  padding-right: 18px;
+  padding-right: 10px;
   font-size: 19;
-  border-radius: 7 7 7 7;
-  margin: 4 4 4 4;
+  border-radius: 4 0 0 4;
+  margin: 4 0 2 2;
 
 	}
 	@keyframes blink {
@@ -315,22 +214,30 @@ min-width: 100px;
 	}
 	#battery.charging {
   padding-left: 18px;
-  padding-right: 18px;
+  padding-right: 14px;
   font-size: 19;
 	}
 
 #custom-powermenu {
 
   background-color: @widgets-background-dark;
-  padding-left: 18px;
+  padding-left: 10px;
   padding-right: 20px;
   font-size: 19;
-  margin: 4 8 4 4;
-  border-radius: 7 7 7 7;
-
+  border-radius: 0 0 0 0;
+  margin: 4 0 2 0;
 }
 
+#custom-swaync {
 
+  color: #ff0048;
+  background-color: @widgets-background-dark;
+  padding-left: 10px;
+  padding-right: 20px;
+  font-size: 19;
+  border-radius: 0 4 4 0;
+  margin: 4 4 2 0;
+}
 
 tooltip {
 border-color: #38334b;

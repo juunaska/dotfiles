@@ -19,10 +19,19 @@
 ],
 
 "modules-center": [
-
+ 	"custom/browser-app",
+ 	"custom/terminal-app",
+ 	"custom/filemanager-app",
+ 	"custom/protondrive-app",
+ 	"custom/simplenote-app",
+ 	"custom/radio-app",
+ 	"custom/sahko-app",
+ 	"custom/weather-app",
+	"custom/tori-app",
 ],
 
 "modules-right": [
+	"custom/keyboard",
 	"custom/border-0",
 	"custom/border-1",
 	"custom/pin",
@@ -105,10 +114,73 @@
         "tooltip-format": "<tt>{calendar}</tt>"
 },
 
+   "custom/browser-app": {
+        "format": "󰖟",
+	"tooltip-format": "Zen Browser",
+	"on-click": "zen-browser --new-window",
+},
+
+   "custom/terminal-app": {
+        "format": "",
+	"tooltip-format": "Kitty",
+	"on-click": "kitty",
+},
+
+   "custom/filemanager-app": {
+        "format": "",
+	"tooltip-format": "Thunar",
+	"on-click": "thunar",
+},
+
+   "custom/protondrive-app": {
+        "format": "",
+	"tooltip-format": "Thunar",
+	"on-click": "zen-browser --new-window https://drive.proton.me",
+},
+
+   "custom/simplenote-app": {
+        "format": "",
+	"tooltip-format": "Simplenote",
+	"on-click": "zen-browser --new-window https://app.simplenote.com",
+},
+
+   "custom/radio-app": {
+        "format": "",
+	"tooltip-format": "Radio",
+	"on-click": "shortwave",
+},
+
+   "custom/sahko-app": {
+        "format": "",
+	"tooltip-format": "Pörssisähkö",
+	"on-click": "zen-browser --new-window https://www.porssisahko.fi/",
+},
+
+   "custom/weather-app": {
+        "format": "",
+	"tooltip-format": "Sää",
+	"on-click": "zen-browser --new-window https://www.foreca.fi/Finland/Vesilahti/10vrk",
+},
+
+   "custom/tori-app": {
+        "format": "󰰥",
+	"tooltip-format": "Tori",
+	"on-click": "zen-browser --new-window https://www.tori.fi/",
+},
+
+
+
+
    "pulseaudio/slider": {
 	"min": 0,
 	"max": 150,
 	"orientation": "horizontal",
+},
+
+   "custom/keyboard": {
+	"format": "󰌌", 
+	"tooltip": false, 
+	"on-click": "~/.config/scripts/keyboard/./keyboard.sh", 
 },
 
    "custom/border-1": {

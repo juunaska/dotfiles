@@ -1,1 +1,1 @@
-waybar -c ~/.config/waybar/themes/colors/config -s ~/.config/waybar/themes/colors/lila.css 
+waybar -c ~/.config/waybar/themes/colors/config-hyprland -s ~/.config/waybar/themes/colors/hyprland.css 
