@@ -47,7 +47,7 @@
 },
 
    "clock": {
-        "format":"{:%A %d.%m. %H:%M}",
+        "format":"{:%A %d.%m  %H:%M}",
         "format-alt":"",
 	"tooltip": false,
         "tooltip-format": "<tt>{calendar}</tt>"
@@ -157,8 +157,8 @@
         "format": "",
 	"tooltip": false, 
 	"tooltip-format": "brightnessctl i", 
-	"on-scroll-up": "brightnessctl s 3%+",
-	"on-scroll-down": "brightnessctl s 3%-"
+	"on-scroll-up": "brightnessctl s 1%+",
+	"on-scroll-down": "brightnessctl s 1%- --min-value=1%"
 },
 
      "network": {

@@ -1,7 +1,7 @@
 /*@define-color background rgba (142,134,111,0.9);*/
-@define-color background rgba (255,255,255,0.0);
+@define-color background #1d1d25;
 /*@define-color background rgba (0,0,0,1.0);*/
-@define-color widgets-background-dark #1c1c1f;
+@define-color widgets-background-dark #1d1d25;
 @define-color widgets-background-light #bc84af;
 @define-color text-light #ffffff;
 @define-color text-dark #ffffff;
@@ -49,11 +49,11 @@ border-radius: 0 0 0 0;
 #custom-browser-app {
   background-color: @widgets-background-dark;
   color: @text-dark;
-  border-radius: 0 0 0 14;
+  border-radius: 7 0 0 7;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 19;
-  margin: 0 0 4 4;
+  margin: 4 0 4 4;
 }
 
 #custom-terminal-app {
@@ -63,7 +63,7 @@ border-radius: 0 0 0 0;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 23;
-  margin: 0 0 4 0;
+  margin: 4 0 4 0;
 }
 
 #custom-filemanager-app {
@@ -73,7 +73,7 @@ border-radius: 0 0 0 0;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 19;
-  margin: 0 0 4 0;
+  margin: 4 0 4 0;
 }
 
 #custom-protondrive-app {
@@ -83,7 +83,7 @@ border-radius: 0 0 0 0;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 19;
-  margin: 0 0 4 0;
+  margin: 4 0 4 0;
 }
 
 #custom-simplenote-app {
@@ -93,7 +93,7 @@ border-radius: 0 0 0 0;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 19;
-  margin: 0 0 4 0;
+  margin: 4 0 4 0;
 }
 
 #custom-radio-app {
@@ -103,7 +103,7 @@ border-radius: 0 0 0 0;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 19;
-  margin: 0 0 4 0;
+  margin: 4 0 4 0;
 }
 
 #custom-sahko-app {
@@ -113,7 +113,7 @@ border-radius: 0 0 0 0;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 19;
-  margin: 0 0 4 0;
+  margin: 4 0 4 0;
 }
 
 #custom-weather-app {
@@ -123,17 +123,17 @@ border-radius: 0 0 0 0;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 19;
-  margin: 0 0 4 0;
+  margin: 4 0 4 0;
 }
 
 #custom-tori-app {
   background-color: @widgets-background-dark;
   color: @text-dark;
-  border-radius: 0 0 14 0;
+  border-radius: 0 7 7 0;
   padding-left: 18px;
   padding-right: 25px;
   font-size: 19;
-  margin: 0 4 4 0;
+  margin: 4 4 4 0;
 }
 
 #custom-web{

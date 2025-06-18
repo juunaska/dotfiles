@@ -109,7 +109,7 @@ output "HDMI-A-1" {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 3
+    gaps 0
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -196,11 +196,11 @@ layout {
       //off
 
         width 2
-        active-color "#fffeee"
+        //active-color "#dee0fc"
         //pinkactive-color "#f06ffc"
        // ponk-color "#c66ffc"
         //active-color "#6f86fc"
-        // active-gradient from="#6ffcd4" to="#f06ffc" angle=180 relative-to="workspace-view"
+         active-gradient from="#dee0fc" to="#e16afc" angle=180 relative-to="workspace-view"
         // active-gradient from="#6f86fc" to="#282633" angle=270 relative-to="workspace-view"
        // active-color "b0aefe"
         inactive-color "#282633"
@@ -332,7 +332,7 @@ window-rule {
 // Example: enable rounded corners for all windows.
 // (This example rule is commented out with a "/-" in front.)
 window-rule {
-    geometry-corner-radius 4
+    geometry-corner-radius 9
     clip-to-geometry true
 }
 
